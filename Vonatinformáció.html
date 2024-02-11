@@ -1,0 +1,192 @@
+<meta charset=utf-8>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            background: rgb(117, 248, 248);
+        }
+
+        nav {
+            background: rgb(62, 182, 182);
+            height: 88px;
+            width:100%;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            padding: 0;
+            margin: 0;
+            float: left;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+        }
+
+        nav ul li {
+            position: relative;
+           list-style: none;
+           display: inline-block;
+           background:rgb(62, 182, 182);
+        }
+
+        nav ul li a {
+            width: 150px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            padding: 0 15px;
+            font-family: Century Gothic;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 60px;
+        }
+
+        nav ul li a:hover {
+            background: rgb(96, 215, 215);
+            color: #000;
+        }
+
+        nav ul li ul {
+            background: rgb(62, 182, 182);
+            position: absolute;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .button {
+            background: #000080;
+            color: #f2f2f2;
+            height: 75px;
+            width: 170px;
+            padding: 3px;
+            margin: 3px;
+        }
+        nav ul ul{
+            position: absolute;
+            top: 60px;
+            display: none;
+        }
+        nav ul li:hover > ul{
+            display: block;
+        }
+        nav ul ul li{
+            display: list-item;
+            position: relative;
+            float: none;
+
+        }
+        nav ul ul ul li{
+            position: relative;
+        }
+        .leugro{
+            margin: 0 auto;
+            display: block;
+        }
+        .main{
+            display: block;
+        }
+
+        .logo{
+            padding: 5px 0 0 5px;
+            
+        }
+        #input{
+            font-size: 20px;
+            color: #000;
+            background-color: cadetblue;
+        }
+        select{
+            background: #00d5ff;
+            width: 400px;
+            height: 60px;
+            margin-left: 600px;
+            font-size: 40px;
+            cursor: pointer;
+            line-height: 2rem;
+        }
+        option{
+            background:rgb(0, 187, 255);
+            padding: 3px;
+            font-size: 40px;
+            border: 1px solid #000;
+            display: block;
+            white-space: nowrap;
+            min-height: 100px;
+        }
+        option a:hover{
+            background: #00b0d3;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="leugro">
+    <nav>
+        <ul>
+            <li><img class="logo" src="logo.png" height="60"></img></li>
+            <li><a href="Főoldal.html"> Főoldal</a></li>
+            <li><a href="Hírek.html"> Hírek</a></li>
+            <li><a href="Főpályaudvar.html"> Főpályaudvar</a></li>
+            <li><a href="Térkép.html"> Térkép</a></li>
+            <li><a href="Vonatinformáció.html"> Menetrendek</a>
+
+            </li>
+            <li><a href="jh_elerhetoseg.html"> Elérhetőségek</a></li>
+            <li><a href="Vonataink.html"> Vonataink</a></li>
+        </ul>
+    </nav>
+</div>
+<div>
+
+<select  name="links" id="" size="1" onchange="window.location.href=this.value;">
+    
+    <option value="selected">Állomás választása</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value="jhmenr.html">Jánosháza</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value="lgsmenr.html">Ligetszentistván</option>
+    <option value=""></option>
+    <option value="auch.html">Maglód Auchan</option>
+    <option value=""></option>
+    <option value="">Maglód Dél</option>
+    <option value=""></option>
+    <option value="temetomr.html">Maglód Falusi Temető</option>
+    <option value="magfop.html">Maglód Főpályaudvar</option>
+    <option value="magkel.html">Maglód Kelet</option>
+    <option value="kel-elag.html">Maglód Keleti elágazás</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value="">Maglód Teher</option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+</select>
+</div>
+</body>

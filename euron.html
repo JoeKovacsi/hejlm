@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroNight - vonatok</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+    /* CSS a képnagyításhoz */
+  #modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  #modal-content {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 80%; /* Módosítás: Meghatározzuk a modális ablak szélességét */
+    max-width: 700px;
+    margin-top: 50px; /* Módosítás: Növeljük a modális ablak felső margóját */
+  }
+  #modal-img {
+    width: auto; /* Módosítás: A kép szélességét automatikusra állítjuk */
+    height: auto; /* Módosítás: A kép magasságát automatikusra állítjuk */
+    max-width: 100%; /* Módosítás: A kép maximális szélességét beállítjuk */
+    max-height: 100%; /* Módosítás: A kép maximális magasságát beállítjuk */
+  }
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+      </style>
+</head>
+<body>
+    <a href="oalfo.html" class="vissza">Vissza</a>
+    <div id="dfdf">
+    <div id="keret">
+        <div><p><img src="LEN40.png">406 Holdfény EuroNight Bucuresti Nord (16:19) - Jánosháza (9:58)</p></div>
+        <div><img src="EN-413.png"></div>91 55 0748 167-3<div></div>
+    </div>
+    <div id="keret">
+        <div><p><img src="LEN40.png">400 Holdfény EuroNight Jánosháza (23:30) - Wien HBF (2:38)</p></div>
+        <div><img src="EN-410.png"></div><div>91 55 1116 253-7</div>
+    </div>
+    <div id="keret">
+        <div><p><img src="LEN40.png">401 Holdfény EuroNight Jánosháza (23:40) - Bucuresti Nord (15:19)</p></div>
+        <div><img src="EN-413.png"></div><div>91 55 0748 167-3</div>
+    </div>
+    <div id="keret">
+        <div><p><img src="LEN40.png">402 Holdfény EuroNight Jánosháza (23:50) - Zagreb (7:18)</p></div>
+        <div><img src="EN-412.png"></div><div>91 55 0224 031-6</div>
+    </div>
+    <div id="keret">
+        <div><p><img src="LEN40.png">403 Holdfény EuroNight Jánosháza (1:30) - Arad (6:36)</p></div>
+        <div><img src="EN-411.png"></div><div>91 55 0748 063-4</div>
+    </div>
+    <div id="keret">
+        <div><p><img src="LEN40.png">413 Holdfény EuroNight Jánosháza (1:45) - Berlin HBF (12:58)</p></div>
+        <div><img src="EN-404.png"></div><div>91 55 0182 214-2</div>
+    </div>
+</div>
+<img id="original-img" src="470-018.png" alt="Eredeti Kép">
+
+<!-- A modal -->
+<div id="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modal-img" src="" alt="Képnagyítás">
+</div>
+
+<script>
+// Jobb kattintásra képcsere és visszaállítás
+var isFirstImage = true;
+document.getElementById('original-img').addEventListener('contextmenu', function(e) {
+  e.preventDefault(); // Megakadályozzuk a jobb kattintás alapértelmezett működését
+
+  if (isFirstImage) {
+    // Második kép betöltése
+    this.src = "470-020.png";
+    isFirstImage = false;
+  } else {
+    // Eredeti kép visszaállítása
+    this.src = "470-018.png";
+    isFirstImage = true;
+  }
+});
+</script>
+</body>
+</html>

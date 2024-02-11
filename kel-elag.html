@@ -1,0 +1,366 @@
+<meta charset=utf-8>
+<head>
+<style>
+
+body {
+ background: #fff;
+ margin: 0;
+ height: 100%;
+}
+
+.nav{
+width:100%;
+background:#000080;
+height:80px;
+}
+ul{
+margin:0;
+padding:0;
+list-style:none;
+position:absolute;
+}
+ul li {
+float:left;
+margin-top:20px;
+}
+ul li a{
+width:150px;
+color:white;
+display: block;
+text-decoration: none;
+font-size: 20px;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+font-family: Century;
+font-weight: bold;
+}
+a:hover{
+background:#0000b3;
+}
+ul li ul {
+background:#000033;
+}
+
+
+        table {
+
+            border: 2px solid blue;
+            border-spacing: 0;
+            background: rgb(123, 201, 224);
+            font-size: 30px;
+            width:970px;
+            
+        }
+
+        table td {
+            font-weight: normal;
+            color: rgb(99, 99, 99);
+            text-align: center;
+            vertical-align: left;
+            padding: 5px 40px 5px 40px;
+            font-family: sans-serif;
+        }
+
+        a:hover {
+            color: blue;
+        }
+        tr:nth-child(1){
+            background: rgb(65, 129, 193);
+        }
+        tr:nth-child(even) {
+            background: rgb(210, 228, 240)
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(229, 236, 242);
+        }
+.button{
+background: #000080;
+color: #f2f2f2;
+height: 75px;
+width: 170px;
+padding: 3px;
+margin:3px;
+}
+
+tbody{
+            height: 500px;
+            overflow: scroll;
+        }
+        #table-wrapper {
+  position:relative;
+  border: 2px solid #000;
+  height: 795px;
+  width: 980px;
+  margin-left: 35%;
+}
+#table-scroll {
+  height:795px;
+  overflow:auto;  
+  width: 980px;
+}
+
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}
+#p1{
+    color: black;
+    display: inline;
+    
+}
+#p2{
+    color: blue;
+    display: inline;
+}
+img{
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+</div>
+<div class="nav">
+<ul>
+<li><img src="logo.png" height="60"></img></li>
+<li><a href ="Főoldal.html"> Főoldal</a></li>
+<li><a href ="Hírek.html"> Hírek</a></li>
+<li><a href ="Főpályaudvar.html"> Főpályaudvar</a></li>
+<li><a href ="Térkép.html"> Térkép</a></li>
+<li><a href ="Vonatinformáció.html"> Menetrendek</a></li>
+<li><a href ="jh_elerhetoseg.html"> Elérhetőségek</a></li>
+<li><a href ="Vonataink.html"> Vonataink</a></li>
+</ul>
+</div>
+<a href="Vonatinformáció.html"><Button class="button">Vissza</button></a>
+    
+<h1 style="text-align: center;"><b>Menetrend</b></h1>
+<h2 style="text-align: center;"><b>Maglód Keleti elágazás</b></h2>
+
+<div id="table-wrapper">
+<div id="table-scroll">
+<center>
+<table>
+<tr><td>Érkezés</td><td>Indulás</td><td>Vonat</td><td>Vágány</td></tr>
+<tr><td>4:11</td><td>4:12</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:09 Maglód FP --<br>Budapest-Keleti 5:04</td><td>1</td></tr>
+<tr><td>4:26</td><td>4:27</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:24 Maglód FP --<br>Budapest-Keleti 5:19</td><td>2</td></tr>
+<tr><td>4:41</td><td>4:42</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:39 Maglód FP --<br>Budapest-Keleti 5:34</td><td>1</td></tr>
+<tr><td>4:56</td><td>4:57</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:54 Maglód FP --<br>Budapest-Keleti 5:49</td><td>2</td></tr>
+<tr><td>4:52</td><td>4:53</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:00 Budapest-Keleti --<br>Maglód FP 4:55</td><td>1</td></tr>
+<tr><td>5:11</td><td>5:12</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:09 Maglód FP --<br>Budapest-Keleti 6:04</td><td>1</td></tr>
+<tr><td>5:07</td><td>5:08</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:15 Budapest-Keleti --<br>Maglód FP 5:10</td><td>2</td></tr>
+<tr><td>5:26</td><td>5:27</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:24 Maglód FP --<br>Budapest-Keleti 6:19</td><td>1</td></tr>
+<tr><td>5:22</td><td>5:23</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:30 Budapest-Keleti --<br>Maglód FP 5:25</td><td>2</td></tr>
+<tr><td>5:32</td><td>5:33</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>5:30 Maglód FP --<br>Maglód Péküzemek 5:41</td><td>9</td></tr>
+<tr><td>5:41</td><td>5:42</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:39 Maglód FP --<br>Budapest-Keleti 6:34</td><td>1</td></tr>
+<tr><td>5:37</td><td>5:38</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>4:45 Budapest-Keleti --<br>Maglód FP 5:40</td><td>2</td></tr>
+<tr><td>5:47</td><td>5:48</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>5:25 Maglód Ipari Park --<br>Maglód FP 5:50</td><td>9</td></tr>
+<tr><td>5:56</td><td>5:57</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:54 Maglód FP --<br>Budapest-Keleti 6:49</td><td>1</td></tr>
+<tr><td>5:52</td><td>5:53</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:00 Budapest-Keleti --<br>Maglód FP 5:55</td><td>2</td></tr>
+<tr><td>6:11</td><td>6:12</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>6:09 Maglód FP --<br>Budapest-Keleti 7:04</td><td>1</td></tr>
+<tr><td>6:07</td><td>6:08</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:15 Budapest-Keleti --<br>Maglód FP 6:10</td><td>2</td></tr>
+<!-- *<tr><td>6:22</td><td>6:23</td><td><img src=""> <p id="p1">EX 17865 Balaton Expressz</p><br>6:20 Maglód FP --<br>Fonyód 8:46</td><td></td></tr>-->
+<tr><td>6:26</td><td>6:27</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>6:24 Maglód FP --<br>Budapest-Keleti 7:19</td><td>1</td></tr>
+<tr><td>6:22</td><td>6:23</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:30 Budapest-Keleti --<br>Maglód FP 6:25</td><td>2</td></tr>
+<tr><td>6:32</td><td>6:33</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>6:30 Maglód FP --<br>Maglód Ipari Park 6:55</td><td>9</td></tr>
+<tr><td>6:37</td><td>6:38</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:45 Budapest-Keleti --<br>Maglód FP 6:40</td><td>1</td></tr>
+<tr><td>6:42</td><td>6:43</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>6:40 Maglód FP --<br>Jánosháza 7:05</td><td>2</td></tr>
+<tr><td>6:47</td><td>6:48</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>6:39 Maglód Péküzemek --<br>Maglód FP 6:50</td><td>9</td></tr>
+<tr><td>6:52</td><td>6:53</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>6:00 Budapest-Keleti --<br>Maglód FP 6:55</td><td>2</td></tr>
+<tr><td>7:06</td><td>7:07</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>7:10 Maglód FP --<br>Jánosháza 7:35</td><td>2</td></tr>
+<tr><td>7:07</td><td>7:08</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>6:15 Budapest-Keleti --<br>Maglód FP 7:10</td><td>1</td></tr>
+<tr><td>7:22</td><td>7:23</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>7:00 Jánosháza --<br>Maglód FP 7:25</td><td>2</td></tr>
+<tr><td>7:32</td><td>7:33</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>7:30 Maglód FP --<br>Maglód Péküzemek 7:41</td><td>9</td></tr>
+<tr><td>7:42</td><td>7:43</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>7:40 Maglód FP --<br>Jánosháza 8:05</td><td></td></tr>
+<tr><td>7:47</td><td>7:48</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>7:25 Maglód Ipari Park --<br>Maglód FP 7:50</td><td>9</td></tr>
+<tr><td>7:52</td><td>7:53</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>7:30 Jánosháza --<br>Maglód FP 7:55</td><td></td></tr>
+<tr><td>8:02</td><td>8:03</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>7:54 Maglód Kelet --<br>Budapest-Keleti 8:47</td><td>7</td></tr>
+<tr><td>8:12</td><td>8:13</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>8:10 Maglód FP --<br>Jánosháza 8:35</td><td>1</td></tr>
+<!-- *<tr><td>8:22</td><td>8:23</td><td><img src=""> <p id="p1">EX 17866 Balaton Expressz</p><br>8:20 Maglód FP --<br>Fonyód 10:46</td><td></td></tr> -->
+<tr><td>8:22</td><td>8:23</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>8:00 Jánosháza --<br>Maglód FP 8:25</td><td>1</td></tr>
+<tr><td>8:32</td><td>8:33</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>8:30 Maglód FP --<br>Maglód Ipari Park 8:55</td><td>9</td></tr>
+<tr><td>8:31</td><td>8:32</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>7:48 Budapest-Keleti --<br>Maglód Kelet 8:40</td><td>8</td></tr>
+<tr><td>8:42</td><td>8:43</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>8:40 Maglód FP --<br>Jánosháza 9:05</td><td>2</td></tr>
+<tr><td>8:47</td><td>8:48</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>8:39 Maglód Péküzemek --<br>Maglód FP 8:50</td><td>9</td></tr>
+<tr><td>8:52</td><td>8:53</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>8:30 Jánosháza --<br>Maglód FP 8:55</td><td>2</td></tr>
+<tr><td>9:02</td><td>9:03</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>8:54 Maglód Kelet --<br>Budapest-Keleti 9:47</td><td>7</td></tr>
+<tr><td>9:12</td><td>9:13</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>9:10 Maglód FP --<br>Jánosháza 9:35</td><td>2</td></tr>
+<tr><td>9:22</td><td>9:23</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>9:00 Jánosháza --<br>Maglód FP 9:25</td><td>2</td></tr>
+<tr><td>9:32</td><td>9:33</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>9:30 Maglód FP --<br>Maglód Péküzemek 9:41</td><td>9</td></tr>
+<tr><td>9:31</td><td>9:32</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>8:48 Budapest-Keleti --<br>Maglód Kelet 9:40</td><td>8</td></tr>
+<tr><td>9:42</td><td>9:43</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>9:40 Maglód FP --<br>Jánosháza 10:05</td><td>2</td></tr>
+<tr><td>9:47</td><td>9:48</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>9:25 Maglód Ipari Park --<br>Maglód FP 9:50</td><td>9</td></tr>
+<tr><td>9:52</td><td>9:53</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>9:30 Jánosháza --<br>Maglód FP 9:55</td><td>2</td></tr>
+<tr><td>10:02</td><td>10:03</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>9:54 Maglód Kelet --<br>Budapest-Keleti 10:47</td><td>7</td></tr>
+<tr><td>10:12</td><td>10:13</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>10:10 Maglód FP --<br>Jánosháza 10:35</td><td>2</td></tr>
+<!--*<tr><td>10:22</td><td>10:23</td><td><img src=""> <p id="p1">EX 17867 Balaton Expressz</p><br>10:20 Maglód FP --<br>Fonyód 12:46</td><td></td></tr>-->
+<tr><td>10:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>10:00 Jánosháza --<br>Maglód FP 10:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>10:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>10:30 Maglód FP --<br>Maglód Ipari Park 10:55</td><td>9</td></tr>
+<tr><td>10:34</td><td>10:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>9:48 Budapest-Keleti --<br>Maglód Kelet 10:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>10:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>10:40 Maglód FP --<br>Jánosháza 11:05</td><td>2</td></tr>
+<tr><td>10:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>10:39 Maglód Péküzemek --<br>Maglód FP 10:50</td><td>9</td></tr>
+<tr><td>10:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>10:30 Jánosháza --<br>Maglód FP 10:55</td><td>2</td></tr>
+<tr><td>10:59</td><td>11:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>10:54 Maglód Kelet --<br>Budapest-Keleti 11:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>11:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>11:10 Maglód FP --<br>Jánosháza 11:35</td><td>2</td></tr>
+<tr><td>11:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>11:00 Jánosháza --<br>Maglód FP 11:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>11:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>11:30 Maglód FP --<br>Maglód Péküzemek 11:41</td><td>9</td></tr>
+<tr><td>11:34</td><td>11:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>10:48 Budapest-Keleti --<br>Maglód Kelet 11:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>11:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>11:40 Maglód FP --<br>Jánosháza 12:05</td><td>2</td></tr>
+<tr><td>11:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>11:25 Maglód Ipari Park --<br>Maglód FP 11:50</td><td>9</td></tr>
+<tr><td>11:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>11:30 Jánosháza --<br>Maglód FP 11:55</td><td>2</td></tr>
+<tr><td>11:59</td><td>12:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>11:54 Maglód Kelet --<br>Budapest-Keleti 12:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>12:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>12:10 Maglód FP --<br>Jánosháza 12:35</td><td>2</td></tr>
+<!--*<tr><td>&nbsp;</td><td>12:20</td><td><img src=""> <p id="p1">EX 17868 Balaton Expressz</p><br>12:20 Maglód FP --<br>Fonyód 14:46</td><td></td></tr>-->
+<tr><td>12:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>12:00 Jánosháza --<br>Maglód FP 12:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>12:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>12:30 Maglód FP --<br>Maglód Ipari Park 12:55</td><td>9</td></tr>
+<tr><td>12:34</td><td>12:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>11:48 Budapest-Keleti --<br>Maglód Kelet 12:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>12:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>12:40 Maglód FP --<br>Jánosháza 13:05</td><td>2</td></tr>
+<tr><td>12:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>12:39 Maglód Péküzemek --<br>Maglód FP 12:50</td><td>9</td></tr>
+<tr><td>12:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>12:30 Jánosháza --<br>Maglód FP 12:55</td><td>2</td></tr>
+<tr><td>12:59</td><td>13:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>12:54 Maglód Kelet --<br>Budapest-Keleti 13:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>13:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>13:10 Maglód FP --<br>Jánosháza 13:35</td><td>2</td></tr>
+<tr><td>13:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>13:00 Jánosháza --<br>Maglód FP 13:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>13:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>13:30 Maglód FP --<br>Maglód Péküzemek 13:41</td><td>9</td></tr>
+<tr><td>13:34</td><td>13:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>12:48 Budapest-Keleti --<br>Maglód Kelet 13:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>13:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>13:40 Maglód FP --<br>Jánosháza 14:05</td><td>2</td></tr>
+<tr><td>13:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>13:25 Maglód Ipari Park --<br>Maglód FP 13:50</td><td>9</td></tr>
+<tr><td>13:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>13:30 Jánosháza --<br>Maglód FP 13:55</td><td>2</td></tr>
+<tr><td>13:59</td><td>14:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>13:54 Maglód Kelet --<br>Budapest-Keleti 14:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>14:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>14:10 Maglód FP --<br>Jánosháza 14:35</td><td>2</td></tr>
+<tr><td>14:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>14:00 Jánosháza --<br>Maglód FP 14:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>14:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>14:30 Maglód FP --<br>Maglód Ipari Park 14:55</td><td>9</td></tr>
+<tr><td>14:34</td><td>14:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>13:48 Budapest-Keleti --<br>Maglód Kelet 14:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>14:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>14:40 Maglód FP --<br>Jánosháza 15:05</td><td>2</td></tr>
+<tr><td>14:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>14:39 Maglód Péküzemek --<br>Maglód FP 14:50</td><td>9</td></tr>
+<tr><td>14:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>14:30 Jánosháza --<br>Maglód FP 14:55</td><td>2</td></tr>
+<tr><td>14:59</td><td>15:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>14:54 Maglód Kelet --<br>Budapest-Keleti 15:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>15:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>15:10 Maglód FP --<br>Jánosháza 15:35</td><td>2</td></tr>
+<tr><td>15:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>15:00 Jánosháza --<br>Maglód FP 15:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>15:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>15:30 Maglód FP --<br>Maglód Péküzemek 15:41</td><td>9</td></tr>
+<tr><td>15:34</td><td>15:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>14:48 Budapest-Keleti --<br>Maglód Kelet 15:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>15:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>15:40 Maglód FP --<br>Jánosháza 16:05</td><td>2</td></tr>
+<!--*<tr><td>15:45</td><td>&nbsp;</td><td><img src=""> <p id="p1">EX 17869 Balaton Expressz</p><br>13:16 Fonyód --<br>Maglód FP 15:45</td><td>8</td></tr>-->
+<tr><td>15:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>15:25 Maglód Ipari Park --<br>Maglód FP 15:50</td><td>9</td></tr>
+<tr><td>15:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>15:30 Jánosháza --<br>Maglód FP 15:55</td><td>2</td></tr>
+<tr><td>15:59</td><td>16:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>15:54 Maglód Kelet --<br>Budapest-Keleti 16:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>16:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>16:10 Maglód FP --<br>Jánosháza 16:35</td><td>2</td></tr>
+<tr><td>16:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>16:00 Jánosháza --<br>Maglód FP 16:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>16:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>16:30 Maglód FP --<br>Maglód Ipari Park 16:55</td><td>9</td></tr>
+<tr><td>16:34</td><td>16:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>15:48 Budapest-Keleti --<br>Maglód Kelet 16:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>16:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>16:40 Maglód FP --<br>Jánosháza 17:05</td><td>2</td></tr>
+<tr><td>16:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>16:39 Maglód Péküzemek --<br>Maglód FP 16:50</td><td>9</td></tr>
+<tr><td>16:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>16:30 Jánosháza --<br>Maglód FP 16:55</td><td>2</td></tr>
+<tr><td>16:59</td><td>17:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>16:54 Maglód Kelet --<br>Budapest-Keleti 17:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>17:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>17:10 Maglód FP --<br>Jánosháza 17:35</td><td>2</td></tr>
+<tr><td>17:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>17:00 Jánosháza --<br>Maglód FP 17:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>17:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>17:30 Maglód FP --<br>Maglód Péküzemek 17:41</td><td>9</td></tr>
+<tr><td>17:34</td><td>17:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>16:48 Budapest-Keleti --<br>Maglód Kelet 17:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>17:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>17:40 Maglód FP --<br>Jánosháza 18:05</td><td>2</td></tr>
+<!--*<tr><td>17:45</td><td>&nbsp;</td><td><img src=""> <p id="p1">EX 17870 Balaton Expressz</p><br>15:16 Fonyód --<br>Maglód FP 17:45</td><td>8</td></tr>-->
+<tr><td>17:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>17:25 Maglód Ipari Park --<br>Maglód FP 17:50</td><td>9</td></tr>
+<tr><td>17:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>17:30 Jánosháza --<br>Maglód FP 17:55</td><td>2</td></tr>
+<tr><td>17:59</td><td>18:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>17:54 Maglód Kelet --<br>Budapest-Keleti 18:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>18:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>18:10 Maglód FP --<br>Jánosháza 18:35</td><td>2</td></tr>
+<tr><td>18:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>18:00 Jánosháza --<br>Maglód FP 18:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>18:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>18:30 Maglód FP --<br>Maglód Ipari Park 18:55</td><td>9</td></tr>
+<tr><td>18:34</td><td>18:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>17:48 Budapest-Keleti --<br>Maglód Kelet 18:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>18:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>18:40 Maglód FP --<br>Jánosháza 19:05</td><td>2</td></tr>
+<tr><td>18:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>18:39 Maglód Péküzemek --<br>Maglód FP 18:50</td><td>9</td></tr>
+<tr><td>18:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>18:30 Jánosháza --<br>Maglód FP 18:55</td><td>2</td></tr>
+<tr><td>18:59</td><td>19:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>18:54 Maglód Kelet --<br>Budapest-Keleti 19:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>19:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>19:10 Maglód FP --<br>Jánosháza 19:35</td><td>2</td></tr>
+<tr><td>19:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>19:00 Jánosháza --<br>Maglód FP 19:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>19:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>19:30 Maglód FP --<br>Maglód Péküzemek 19:41</td><td>9</td></tr>
+<tr><td>19:34</td><td>19:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>18:48 Budapest-Keleti --<br>Maglód Kelet 19:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>19:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>19:40 Maglód FP --<br>Jánosháza 20:05</td><td>2</td></tr>
+<!--*<tr><td>19:45</td><td>&nbsp;</td><td><img src=""> <p id="p1">EX 17871 Balaton Expressz</p><br>17:16 Fonyód --<br>Maglód FP 19:45</td><td>8</td></tr>-->
+<tr><td>19:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>19:25 Maglód Ipari Park --<br>Maglód FP 19:50</td><td>9</td></tr>
+<tr><td>19:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>19:30 Jánosháza --<br>Maglód FP 19:55</td><td>2</td></tr>
+<tr><td>19:59</td><td>20:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>19:54 Maglód Kelet --<br>Budapest-Keleti 20:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>20:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>20:10 Maglód FP --<br>Jánosháza 20:35</td><td>2</td></tr>
+<tr><td>20:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>20:00 Jánosháza --<br>Maglód FP 20:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>20:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>20:30 Maglód FP --<br>Maglód Ipari Park 20:55</td><td>9</td></tr>
+<tr><td>20:34</td><td>20:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>19:48 Budapest-Keleti --<br>Maglód Kelet 20:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>20:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>20:40 Maglód FP --<br>Jánosháza 21:05</td><td>2</td></tr>
+<tr><td>20:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>20:39 Maglód Péküzemek --<br>Maglód FP 20:50</td><td>9</td></tr>
+<tr><td>20:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>20:30 Jánosháza --<br>Maglód FP 20:55</td><td>2</td></tr>
+<tr><td>20:59</td><td>21:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>20:54 Maglód Kelet --<br>Budapest-Keleti 21:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>21:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>21:10 Maglód FP --<br>Jánosháza 21:35</td><td>2</td></tr>
+<tr><td>21:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>21:00 Jánosháza --<br>Maglód FP 21:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>21:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>21:30 Maglód FP --<br>Maglód Péküzemek 21:41</td><td>9</td></tr>
+<tr><td>21:34</td><td>21:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>20:48 Budapest-Keleti --<br>Maglód Kelet 21:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>21:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>21:40 Maglód FP --<br>Jánosháza 22:05</td><td>2</td></tr>
+<!--*<tr><td>21:45</td><td>&nbsp;</td><td><img src=""> <p id="p1">EX 17872 Balaton Expressz</p><br>19:16 Fonyód --<br>Maglód FP 21:45</td><td>8</td></tr>-->
+<tr><td>21:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>21:25 Maglód Ipari Park --<br>Maglód FP 21:50</td><td>9</td></tr>
+<tr><td>21:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>21:30 Jánosháza --<br>Maglód FP 21:55</td><td>2</td></tr>
+<tr><td>21:59</td><td>22:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>21:54 Maglód Kelet --<br>Budapest-Keleti 22:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>22:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>22:10 Maglód FP --<br>Jánosháza 22:35</td><td>2</td></tr>
+<tr><td>22:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>22:00 Jánosháza --<br>Maglód FP 22:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>22:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>22:30 Maglód FP --<br>Maglód Ipari Park 22:55</td><td>9</td></tr>
+<tr><td>22:34</td><td>22:35</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>21:48 Budapest-Keleti --<br>Maglód Kelet 22:40</td><td>8</td></tr>
+<tr><td>&nbsp;</td><td>22:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>22:40 Maglód FP --<br>Jánosháza 23:05</td><td>2</td></tr>
+<tr><td>22:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>22:39 Maglód Péküzemek --<br>Maglód FP 22:50</td><td>9</td></tr>
+<tr><td>22:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>22:30 Jánosháza --<br>Maglód FP 22:55</td><td>2</td></tr>
+<tr><td>22:59</td><td>23:00</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>22:54 Maglód Kelet --<br>Budapest-Keleti 23:47</td><td>7</td></tr>
+<tr><td>&nbsp;</td><td>23:10</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>23:10 Maglód FP --<br>Jánosháza 23:35</td><td>2</td></tr>
+<tr><td>23:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>23:00 Jánosháza --<br>Maglód FP 23:25</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>23:30</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>23:30 Maglód FP --<br>Maglód Péküzemek 23:41</td><td>9</td></tr>
+<tr><td>&nbsp;</td><td>23:40</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>23:40 Maglód FP --<br>Jánosháza 0:05</td><td>2</td></tr>
+<tr><td>23:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>23:25 Maglód Ipari Park --<br>Maglód FP 23:50</td><td>9</td></tr>
+<tr><td>23:55</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>23:30 Jánosháza --<br>Maglód FP 23:55</td><td>2</td></tr>
+<tr><td>0:25</td><td>&nbsp;</td><td><img src="ls61.png"> <p id="p1">személyvonat</p><br>0:00 Jánosháza --<br>Maglód FP 0:25</td><td>2</td></tr>
+<tr><td>0:50</td><td>&nbsp;</td><td><img src="LS67.png"> <p id="p1">személyvonat</p><br>0:39 Maglód Péküzemek --<br>Maglód FP 0:50</td><td>9</td></tr>
+
+
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+<tr><td>:06</td><td>:07</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:49 Jánosháza --<br>Martinovics Tér :20</td><td>1</td></tr>
+
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+<tr><td>:03</td><td>:04</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>:50 Martinovics Tér --<br>Jánosháza :21</td><td>2</td></tr>
+</table>
+
+</center>
+</div>
+</div>
+</body>

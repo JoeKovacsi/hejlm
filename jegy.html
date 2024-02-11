@@ -1,0 +1,149 @@
+<meta charset=utf-8>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Jegyvásásrlás</title>
+	<style>
+	.signup-form{
+    height:1030px;
+    width:600px;
+    margin-top:5%;
+    margin-left:25%;
+	background: #ffcc00;
+}
+.Signup-head{
+    padding:8px;
+}
+.signup-content .radio{
+    margin:10px 10px;
+}
+.signup-content2 .input{
+    width:400px;
+    padding:10px;
+    margin:10px;
+    color:#000000;
+	background: #e6b800;
+}
+.signup-content2 .tarikh{
+    margin:10px;
+    padding:10px;
+    color:#000000;
+		background: #e6b800;
+}
+.signup-content2  .person{
+    padding:10px;
+    margin:10px;
+    color:#000000;
+		background: #e6b800;
+}
+.signup-content2 .travel{
+    margin:20px 20px;
+}
+.signup-content2 .travel2{
+    padding:5px;
+}
+.signup-content2 .submit-btn{
+    border:none;
+    outline:none;
+    width:200px;
+    padding:10px;
+    margin-left:200px;
+}
+.smb{
+padding: 5px;
+margin: 5px;
+background: #e6b800;
+color: #000000;
+}
+table{
+background:#e6b800;
+font-size: 40px;
+border-collapse: collapse;
+margin: 20px;
+color: #000000;
+}
+table td{
+text-align: center;
+vertical-align: center;
+border: 1px solid black;
+padding: 3px;
+}
+.select{
+background: #e6b800;
+}
+.vissza{
+padding: 5px;
+margin: 3px;
+border-radius: 8px;
+background: #e6b800;
+color: #000000;
+height: 120px;
+width: 200px;
+font-size: 20px;
+}
+	</style>
+</head>
+<body>
+<a href="Főoldal.html"><button class="vissza">Vissza</button></a>
+    <form>
+
+        <div class="signup-form bg-dark">
+
+            <div class="Signup-head bg-warning">
+                <h1>Online jegyvásárlás</h1>
+            </div>
+
+            <div class="signup-content">
+                <input type="radio" class="radio" name="r">
+                <label class="text-white">Egyszeri</label>
+                <input type="radio" class="radio" name="r">
+                <label class="text-white">Retúr</label>
+            </div>
+
+            <div class="signup-content2">
+                <input type="text" placeholder="Honnan" class="input bg-dark">
+                <input type="text" placeholder="Hova" class="input bg-dark"><br>
+
+
+            <label class="text-white" style="margin-left:10px;">Indulás</label>
+            <input type="date" class="tarikh bg-dark text-white">
+            <label class="text-white" style="margin-left:10px;">Visszaút</label>
+            <input type="date" class="tarikh bg-dark">
+
+            <input type="number" class="bg-dark person" placeholder="Felnőtt">
+            <input type="number" class="bg-dark person" placeholder="Diák"><br>
+
+            <label class="text-white travel">Kocsiosztály</label>
+            <select class="select">
+                <option></option>
+                <option>1+ Osztály</option>
+                <option>1. Osztály</option>
+                <option>2. Osztály</option>
+                <option>Helyjegy</option>
+                <option>Pótjegy</option>
+                <option>Kerékpárjegy</option>
+                <option>Hálójegy</option>
+                <option>Nemzetközi jegy</option>
+            </select>
+
+           
+        </div>
+		<center><table>
+		<tr><td>Jegytípus</td><td>Jegyár</td></tr>
+		<tr><td>1+. Osztály</td><td>890 Ft</td></tr>
+		<tr><td>1. Osztály</td><td>675 Ft</td></tr>
+		<tr><td>2. Osztály</td><td>355 Ft</td></tr>
+		<tr><td>Helyjegy</td><td>285 Ft</td></tr>
+		<tr><td>Pótjegy</td><td>360 Ft</td></tr>
+		<tr><td>Kerékpárjegy</td><td>290 Ft</td></tr>
+		<tr><td>Hálójegy</td><td>850 Ft</td></tr>
+		<tr><td>Nemzetközi jegy</td><td>1240 Ft</td></tr>
+		<tr><td>Áfa</td><td>26%</td></tr>
+		</table>
+		 <button class="smb" onclick="alert('Sikeres Jegyvásárlás!')">Jegyvásárlás</button></center>
+		 
+        </div>
+		
+    </form>
+	
+</body>

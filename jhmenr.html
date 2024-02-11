@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<head>
+<style>
+
+body {
+ background: #fff;
+ margin: 0;
+ height: 100%;
+}
+
+.nav{
+width:100%;
+background:#000080;
+height:80px;
+}
+ul{
+margin:0;
+padding:0;
+list-style:none;
+position:absolute;
+}
+ul li {
+float:left;
+margin-top:20px;
+}
+ul li a{
+width:150px;
+color:white;
+display: block;
+text-decoration: none;
+font-size: 20px;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+font-family: Century;
+font-weight: bold;
+}
+a:hover{
+background:#0000b3;
+}
+ul li ul {
+background:#000033;
+}
+
+
+        table {
+
+            border: 2px solid blue;
+            border-spacing: 0;
+            background: rgb(123, 201, 224);
+            font-size: 30px;
+            width:880px;
+            
+        }
+
+        table td {
+            font-weight: normal;
+            color: rgb(99, 99, 99);
+            text-align: center;
+            vertical-align: left;
+            padding: 5px 40px 5px 40px;
+            font-family: sans-serif;
+        }
+
+        a:hover {
+            color: blue;
+        }
+        tr:nth-child(1){
+            background: rgb(65, 129, 193);
+        }
+        tr:nth-child(even) {
+            background: rgb(210, 228, 240)
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(229, 236, 242);
+        }
+.button{
+background: #000080;
+color: #f2f2f2;
+height: 75px;
+width: 170px;
+padding: 3px;
+margin:3px;
+}
+
+tbody{
+            height: 500px;
+            overflow: scroll;
+        }
+        #table-wrapper {
+  position:relative;
+  border: 2px solid #000;
+  height: 795px;
+  width: 900px;
+  margin-left: 35%;
+}
+#table-scroll {
+  height:795px;
+  overflow:auto;  
+  width: 900px;
+}
+
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}
+#p1{
+    color: black;
+    display: inline;
+    
+}
+#p2{
+    color: blue;
+    display: inline;
+}
+img{
+    border-radius: 5px;
+}
+</style>
+</head>
+<font size="18">
+<body>
+</div>
+<div class="nav">
+<ul>
+<li><img src="logo.png" height="60"></img></li>
+<li><a href ="Főoldal.html"> Főoldal</a></li>
+<li><a href ="Hírek.html"> Hírek</a></li>
+<li><a href ="Főpályaudvar.html"> Főpályaudvar</a></li>
+<li><a href ="Térkép.html"> Térkép</a></li>
+<li><a href ="Vonatinformáció.html"> Vonatinformáció</a></li>
+<li><a href ="jh_elerhetoseg.html"> Elérhetőségek</a></li>
+<li><a href ="Vonataink.html"> Vonataink</a></li>
+</ul>
+</div>
+<a href="Vonatinformáció.html"><Button class="button">Vissza</button></a>
+
+    <div id="table-wrapper">
+        <div id="table-scroll">
+    <table align="center">
+        <thead>
+        <tr><th>Érkezés</th><th>Indulás</th><th>Úticél</th><th>Vágány</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>&nbsp;</td><td>3:35</td><td><img src=""><p id="p2">420 KŐBÁNYA InterCity</p><br>3:35 Jánosháza --<br>Kőbánya-Kispest 4:22</td><td>9</td></tr>
+        <tr><td>&nbsp;</td><td>4:27</td><td><img src=""><p id="p2">421 KŐBÁNYA InterCity</p><br>4:27 Jánosháza --<br>Kőbánya-Kispest 5:10</td><td>9</td></tr>
+        <tr><td>4:29</td><td>4:30</td><td><img src="LS61.png"> <p id="p1">3619 személyvonat</p><br>4:00 Budapest-Keleti -- <br>Maglód FP 4:55</b></td><td>2</td></tr>
+        <tr><td>4:34</td><td>4:35</td><td><img src="LS61.png"> <p id="p1">3600 személyvonat</p><br>4:09 Maglód FP --<br>Budapest-Keleti 5:04</td><td>1</td></tr>
+        <tr><td>4:44</td><td>4:45</td><td><img src="LS61.png"> <p id="p1">3629 szmélyvonat</p><br>4:15 Budapest-Keleti --<br>Maglód FP 5:10</td><td>2</td></tr>
+        <tr><td>4:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>4:30 Falusi Temető --<br>Jánosháza 5:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>4:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>4:49 Jánosháza --<br>Martinovics Tér 5:19</td><td>12</td></tr>
+        <tr><td>4:49</td><td>4:50</td><td><img src="LS61.png"> <p id="p1">3610 személyvonat</p><br>4:24 Maglód FP --<br>Budapest-Keleti 5:19</td><td>1</td></tr>
+        <tr><td>&nbsp;</td><td>4:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>4:55 Jánosháza --<br>Falusi Temető 5:10</td><td>13</td></tr>
+        <tr><td>4:59</td><td>5:00</td><td><img src="LS61.png"> <p id="p1">3639 személyvonat</p><br>4:30 Budapest-Keleti --<br>Maglód FP 5:25</td><td>2</td></tr>
+        <tr><td>5:04</td><td>5:05</td><td><img src="LS61.png"> <p id="p1">3620 személyvonat</p><br>4:39 Maglód FP --<br>Budapest-Keleti 5:34</td><td>1</td></tr>
+        <tr><td>5:14</td><td>5:15</td><td><img src="LS61.png"> <p id="p1">3649 személyvonat</p><br>4:45 Budapest-Keleti --<br>Maglód FP 5:40</td><td>2</td></tr>
+        <tr><td>5:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>5:00 Falusi Temető --<br>Jánosháza 5:15</td><td>13</td></tr>
+        <tr><td>5:19</td><td>5:20</td><td><img src="LS61.png"> <p id="p1">3630 személyvonat</p><br>4:54 Maglód FP --<br>Budapest-Keleti 5:49</td><td>1</td></tr>
+        <tr><td>&nbsp;</td><td>5:22</td><td><img src=""><p id="p2">422 KŐBÁNYA InterCity</p><br>5:22 Jánosháza --<br>Kőbánya-Kispest 6:08</td><td>9</td></tr>
+        <tr><td>5:24</td><td>5:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>5:22 Ligetszentistván --<br>Maglód Ófalu 5:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>5:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>5:25 Jánosháza --<br>Falusi Temető 5:40</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>5:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>5:27 Jánosháza --<br>Maglód Auchan 5:59</td><td>10</td></tr>
+        <tr><td>5:29</td><td>5:30</td><td><img src="LS61.png"> <p id="p1">3659 személyvonat</p><br>5:00 Budapest-Keleti --<br>Maglód FP 5:55</td><td>2</td></tr>
+        <tr><td>5:34</td><td>5:35</td><td><img src="LS61.png"> <p id="p1">3640 személyvonat</p><br>5:09 Maglód FP --<br>Budapest-Keleti 6:04</td><td>1</td></tr>
+        <tr><td>5:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>5:05 Maglód Auchan --<br>Jánosháza 5:37</td><td>10</td></tr>
+        <tr><td>5:44</td><td>5:45</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:15 Budapest-Keleti --<br>Maglód FP 6:10</td><td>2</td></tr>
+        <tr><td>5:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>5:30 Falusi Temető --<br>Jánosháza 5:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>5:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>5:49 Jánosháza --<br>Martinovics Tér 6:19</td><td>12</td></tr>
+        <tr><td>5:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4216 KŐBÁNYA InterCity</p><br>5:00 Kőbánya-Kispest --<br>Jánosháza 5:50</td><td>9</td></tr>
+        <tr><td>5:49</td><td>5:50</td><td><img src="LS61.png"> <p id="p1">3650 személyvonat</p><br>5:24 Maglód FP --<br>Budapest-Keleti 6:19</td><td>1</td></tr>
+        <tr><td>5:54</td><td>5:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>5:49 Maglód Ófalu --<br>Ligetszentisván 5:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>5:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>5:55 Jánosháza --<br>Falusi Temető 6:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>5:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>5:57 Jánosháza --<br>Maglód Auchan 6:29</td><td>10</td></tr>
+        <tr><td>5:59</td><td>6:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:30 Budapest-Keleti --<br>Maglód FP 6:25</td><td>2</td></tr>
+        <tr><td>6:04</td><td>6:05</td><td><img src="LS61.png"> <p id="p1">3660 személyvonat</p><br>5:39 Maglód FP --<br>Budapest-Keleti 6:34</td><td>1</td></tr>
+        <tr><td>&nbsp;</td><td>6:06</td><td><img src=""><p id="p2">423 KŐBÁNYA InterCity</p><br>6:06 Jánosháza --<br>Kőbánya-Kispest 6:50</td><td>9</td></tr>
+        <tr><td>6:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>5:35 Maglód Auchan --<br>Jánosháza 6:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>6:10</td><td><img src=""><p id="p2">430 PETŐFI InterCity</p><br>6:10 Jánosháza --<br>Klenovatelep 6:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>6:10</td><td><img src=""><p id="p2">431 PETŐFI InterCity</p><br>6:10 Jánosháza --<br>Kelenföld 6:42</td><td>8</td></tr>
+        <tr><td>6:14</td><td>6:15</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>5:45 Budapest-Keleti --<br>Maglód FP 6:40</td><td>2</td></tr>
+        <tr><td>6:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4323 PETŐFI InterCity</p><br>5:43 Kelenföld --<br>Jánosháza 6:15</td><td>8</td></tr>
+        <tr><td>6:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>6:00 Falusi Temető --<br>Jánosháza 6:15</td><td>13</td></tr>
+        <tr><td>6:19</td><td>6:20</td><td><img src="LS61.png"> <p id="p1">3670 személyvonat</p><br>5:54 Maglód FP --<br>Budapest-Keleti 6:49</td><td>1</td></tr>
+        <tr><td>6:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>5:50 Martinovics Tér --<br>Jánosháza 6:20</td><td>12</td></tr>
+        <tr><td>&nbsp;</td><td>6:21</td><td><img src=""><p id="p2">424 KŐBÁNYA InterCity</p><br>6:21 Jánosháza --<br>Kőbánya-Kispest 7:08</td><td>9</td></tr>
+        <tr><td>6:24</td><td>6:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>6:22 Ligetszentistván --<br>Maglód Ófalu 6:30</td><td>1a</td></tr>
+        <tr><td>6:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4324 PETŐFI InterCity</p><br>5:39 Klenovatelep --<br>Jánosháza 6:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>6:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>6:25 Jánosháza --<br>Falusi Temető 6:40</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>6:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>6:27 Jánosháza --<br>Maglód Auchan 6:59</td><td>10</td></tr>
+        <tr><td>6:29</td><td>6:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>6:00 Budapest-Keleti --<br>Maglód FP 6:55</td><td>2</td></tr>
+        <tr><td>6:34</td><td>6:35</td><td><img src="LS61.png"> <p id="p1">3680 személyvonat</p><br>6:09 Maglód FP --<br>Budapest-Keleti 7:04</td><td>1</td></tr>
+        <tr><td>&nbsp;</td><td>6:36</td><td><img src=""><p id="p2">425 KŐBÁNYA InterCity</p><br>6:36 Jánosháza --<br>Kőbánya-Kispest 7:24</td><td>9</td></tr>
+        <tr><td>6:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>6:05 Maglód Auchan --<br>Jánosháza 6:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>6:40</td><td><img src=""><p id="p2">460 KÁLMÁN InterCity</p><br>6:40 Jánosháza --<br>Szolnok 7:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>6:40</td><td><img src=""><p id="p2">461 KÁLMÁN InterCity</p><br>6:40 Jánosháza --<br>Székesfehérvár 7:57</td><td>7</td></tr>
+        <!-- *<tr><td>6:42</td><td>6:43</td><td><img src=""> <p id="p1">EX 17865 Balaton Expressz</p><br>6:20 Maglód FP --<br>Fonyód 8:46</td><td>8</td></tr> -->
+        <tr><td>6:44</td><td>6:45</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>6:15 Budapest-Keleti --<br>Maglód FP 7:10</td><td>2</td></tr>
+        <tr><td>6:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>6:30 Falusi Temető --<br>Jánosháza 6:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>6:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>6:49 Jánosháza --<br>Martinovics Tér 7:19</td><td>12</td></tr>
+        <tr><td>6:49</td><td>6:50</td><td><img src="LS61.png"> <p id="p1">3690 személyvonat</p><br>6:24 Maglód FP --<br>Budapest-Keleti 7:19</td><td>1</td></tr>
+        <tr><td>6:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4621 KÁLMÁN InterCity</p><br>5:35 Szolnok --<br>Jánosháza 6:50</td><td>7</td></tr>
+        <tr><td>6:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4622 KÁLMÁN InterCity</p><br>5:33 Székesfehérvár --<br>Jánosháza 6:50</td><td>7</td></tr>
+        <tr><td>6:51</td><td>&nbsp;</td><td><img src=""><p id="p2">4217 KŐBÁNYA InterCity</p><br>6:10 Kőbánya-Kispest --<br>Jánosháza 6:51</td><td>9</td></tr>
+        <tr><td>6:54</td><td>6:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>6:49 Maglód Ófalu --<br>Ligetszentisván 6:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>6:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>6:55 Jánosháza --<br>Falusi Temető 7:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>6:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>6:57 Jánosháza --<br>Maglód Auchan 7:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>7:00</td><td><img src="LS61.png"> <p id="p1">3409 személyvonat</p><br>7:00 Jánosháza --<br>Maglód FP 7:25</td><td>11</td></tr>
+        <tr><td>7:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">3400 személyvonat</p><br>6:40 Maglód FP --<br>Jánosháza 7:05</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>7:06</td><td><img src=""><p id="p2">426 KŐBÁNYA InterCity</p><br>7:06 Jánosháza --<br>Kőbánya-Kispest 7:54</td><td>9</td></tr>
+        <tr><td>7:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>6:35 Maglód Auchan --<br>Jánosháza 7:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>7:10</td><td><img src=""><p id="p2">432 PETŐFI InterCity</p><br>7:10 Jánosháza --<br>Klenovatelep 7:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>7:10</td><td><img src=""><p id="p2">433 PETŐFI InterCity</p><br>7:10 Jánosháza --<br>Kelenföld 7:42</td><td>8</td></tr>
+        <tr><td>7:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4325 PETŐFI InterCity</p><br>6:43 Kelenföld --<br>Jánosháza 7:15</td><td>8</td></tr>
+        <tr><td>7:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>7:00 Falusi Temető --<br>Jánosháza 7:15</td><td>13</td></tr>
+        <tr><td>7:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>6:50 Martinovics Tér --<br>Jánosháza 7:20</td><td>12</td></tr>
+        <tr><td>7:24</td><td>7:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>7:22 Ligetszentistván --<br>Maglód Ófalu 7:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>7:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>7:25 Jánosháza --<br>Falusi Temető 7:40</td><td>13</td></tr>
+        <tr><td>7:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4326 PETŐFI InterCity</p><br>6:39 Klenovatelep --<br>Jánosháza 7:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>7:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>7:27 Jánosháza --<br>Maglód Auchan 7:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>7:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>7:30 Jánosháza --<br>Maglód FP 7:55</td><td>11</td></tr>
+        <tr><td>7:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>7:10 Maglód FP --<br>Jánosháza 7:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>6:35</td><td><img src=""><p id="p2">470 FENYŐ InterCity</p><br>6:35 Jánosháza --<br>Lőkösháza 9:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>6:35</td><td><img src=""><p id="p2">471 FENYŐ InterCity</p><br>6:35 Jánosháza --<br>Veszprém 8:53</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>7:36</td><td><img src=""><p id="p2">427 KŐBÁNYA InterCity</p><br>7:36 Jánosháza --<br>Kőbánya-Kispest 8:24</td><td>9</td></tr>
+        <tr><td>7:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>7:05 Maglód Auchan --<br>Jánosháza 7:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>7:40</td><td><img src=""><p id="p2">462 KÁLMÁN InterCity</p><br>7:40 Jánosháza --<br>Szolnok 8:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>7:40</td><td><img src=""><p id="p2">463 KÁLMÁN InterCity</p><br>7:40 Jánosháza --<br>Székesfehérvár 8:57</td><td>7</td></tr>
+        <tr><td>7:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>7:30 Falusi Temető --<br>Jánosháza 7:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>7:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>7:49 Jánosháza --<br>Martinovics Tér 8:19</td><td>12</td></tr>
+        <tr><td>7:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4623 KÁLMÁN InterCity</p><br>6:35 Szolnok --<br>Jánosháza 7:50</td><td>7</td></tr>
+        <tr><td>7:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4624 KÁLMÁN InterCity</p><br>6:33 Székesfehérvár --<br>Jánosháza 7:50</td><td>7</td></tr>
+        <tr><td>7:54</td><td>7:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>7:49 Maglód Ófalu --<br>Ligetszentisván 7:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>7:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>7:55 Jánosháza --<br>Falusi Temető 8:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>7:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>7:57 Jánosháza --<br>Maglód Auchan 8:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>8:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>8:00 Jánosháza --<br>Maglód FP 8:25 </td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>8:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>8:00 Jánosháza --<br>Budapest-Keleti 8:34</td><td>3</td></tr>
+        <tr><td>8:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4218 KŐBÁNYA InterCity</p><br>7:10 Kőbánya-Kispest --<br>Jánosháza 8:00</td><td>9</td></tr>
+        <tr><td>8:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>7:31 Budapest-Keleti --<br>Jánosháza 8:05</td><td>3</td></tr>
+        <tr><td>8:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>7:40 Maglód FP --<br>Jánosháza 8:05</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>8:06</td><td><img src=""><p id="p2">428 KŐBÁNYA InterCity</p><br>8:06 Jánosháza --<br>Kőbánya-Kispest 8:51</td><td>9</td></tr>
+        <tr><td>8:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>7:35 Maglód Auchan --<br>Jánosháza 8:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>8:10</td><td><img src=""><p id="p2">434 PETŐFI InterCity</p><br>8:10 Jánosháza --<br>Klenovatelep 8:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>8:10</td><td><img src=""><p id="p2">435 PETŐFI InterCity</p><br>8:10 Jánosháza --<br>Kelenföld 8:42</td><td>8</td></tr>
+        <tr><td>8:14</td><td>8:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>7:48 Budapest-Keleti --<br>Maglód Kelet 8:40</td><td>2</td></tr>
+        <tr><td>8:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4327 PETŐFI InterCity</p><br>7:43 Kelenföld --<br>Jánosháza 8:15</td><td>8</td></tr>
+        <tr><td>8:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>8:00 Falusi Temető --<br>Jánosháza 8:15</td><td>13</td></tr>
+        <tr><td>8:19</td><td>8:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>7:54 Maglód Kelet --<br>Budapest-Keleti 8:47</td><td>1</td></tr>
+        <tr><td>8:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>7:50 Martinovics Tér --<br>Jánosháza 8:20</td><td>12</td></tr>
+        <tr><td>8:24</td><td>8:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>8:22 Ligetszentistván --<br>Maglód Ófalu 8:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>8:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>8:25 Jánosháza --<br>Falusi Temető 8:40</td><td>13</td></tr>
+        <tr><td>8:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4328 PETŐFI InterCity</p><br>7:39 Klenovatelep --<br>Jánosháza 8:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>8:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>8:27 Jánosháza --<br>Maglód Auchan 8:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>8:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>8:30 Jánosháza --<br>Maglód FP 8:55</td><td>11</td></tr>
+        <tr><td>8:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>8:10 Maglód FP --<br>Jánosháza 8:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>8:35</td><td><img src=""><p id="p2">472 FENYŐ InterCity</p><br>8:35 Jánosháza --<br>Lőkösháza 11:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>8:35</td><td><img src=""><p id="p2">473 FENYŐ InterCity</p><br>8:35 Jánosháza --<br>Veszprém 10:53</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>8:36</td><td><img src=""><p id="p2">429 KŐBÁNYA InterCity</p><br>8:36 Jánosháza --<br>Kőbánya-Kispest 9:28</td><td>9</td></tr>
+        <tr><td>8:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>8:05 Maglód Auchan --<br>Jánosháza 8:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>8:40</td><td><img src=""><p id="p2">464 KÁLMÁN InterCity</p><br>8:40 Jánosháza --<br>Szolnok 9:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>8:40</td><td><img src=""><p id="p2">465 KÁLMÁN InterCity</p><br>8:40 Jánosháza --<br>Székesfehérvár 9:57</td><td>7</td></tr>
+        <!-- *<tr><td>8:42</td><td>8:43</td><td><img src=""> <p id="p1">EX 17866 Balaton Expressz</p><br>8:20 Maglód FP --<br>Fonyód 10:46</td><td>8</td></tr> -->
+        <tr><td>8:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>8:30 Falusi Temető --<br>Jánosháza 8:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>8:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>8:49 Jánosháza --<br>Martinovics Tér 9:19</td><td>12</td></tr>
+        <tr><td>8:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4625 KÁLMÁN InterCity</p><br>7:35 Szolnok --<br>Jánosháza 8:50</td><td>7</td></tr>
+        <tr><td>8:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4626 KÁLMÁN InterCity</p><br>7:33 Székesfehérvár --<br>Jánosháza 8:50</td><td>7</td></tr>
+        <tr><td>8:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4219 KŐBÁNYA InterCity</p><br>8:10 Kőbánya-Kispest --<br>Jánosháza 8:52</td><td>9</td></tr>
+        <tr><td>8:54</td><td>8:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>8:49 Maglód Ófalu --<br>Ligetszentisván 8:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>8:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>8:55 Jánosháza --<br>Falusi Temető 9:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>8:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>8:57 Jánosháza --<br>Maglód Auchan 9:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>9:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>9:00 Jánosháza --<br>Maglód FP 9:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>9:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>9:00 Jánosháza --<br>Budapest-Keleti 9:34</td><td>3</td></tr>
+        <tr><td>9:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4707 FENYŐ InterCity</p><br>6:19 Lőkösháza --<br>Jánosháza 9:00</td><td>6</td></tr>
+        <tr><td>9:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4708 FENYŐ InterCity</p><br>6:51 Veszprém --<br>Jánosháza 9:00</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>9:02</td><td><img src=""><p id="p2">4201 KŐBÁNYA InterCity</p><br>9:02 Jánosháza --<br>Kőbánya-Kispest 9:46</td><td>9</td></tr>
+        <tr><td>9:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>8:31 Budapest-Keleti --<br>Jánosháza 9:05</td><td>3</td></tr>
+        <tr><td>9:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>8:40 Maglód FP --<br>Jánosháza 9:05</td><td>11</td></tr>
+        <tr><td>9:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>8:35 Maglód Auchan --<br>Jánosháza 9:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>9:10</td><td><img src=""><p id="p2">436 PETŐFI InterCity</p><br>9:10 Jánosháza --<br>Klenovatelep 9:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>9:10</td><td><img src=""><p id="p2">437 PETŐFI InterCity</p><br>9:10 Jánosháza --<br>Kelenföld 9:42</td><td>8</td></tr>
+        <tr><td>9:14</td><td>9:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>8:48 Budapest-Keleti --<br>Maglód Kelet 9:40</td><td>2</td></tr>
+        <tr><td>9:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4329 PETŐFI InterCity</p><br>8:43 Kelenföld --<br>Jánosháza 9:15</td><td>8</td></tr>
+        <tr><td>9:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>9:00 Falusi Temető --<br>Jánosháza 9:15</td><td>13</td></tr>
+        <tr><td>9:19</td><td>9:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>8:54 Maglód Kelet --<br>Budapest-Keleti 9:47</td><td>1</td></tr>
+        <tr><td>9:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>8:50 Martinovics Tér --<br>Jánosháza 9:20</td><td>12</td></tr>
+        <tr><td>9:24</td><td>9:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>9:22 Ligetszentistván --<br>Maglód Ófalu 9:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>9:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>9:25 Jánosháza --<br>Falusi Temető 9:40</td><td>13</td></tr>
+        <tr><td>9:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4330 PETŐFI InterCity</p><br>8:39 Klenovatelep --<br>Jánosháza 9:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>9:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>9:27 Jánosháza --<br>Maglód Auchan 9:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>9:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>9:30 Jánosháza --<br>Maglód FP 9:55</td><td>11</td></tr>
+        <tr><td>9:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>9:10 Maglód FP --<br>Jánosháza 9:35</td><td>11</td></tr>
+        <tr><td>9:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>9:05 Maglód Auchan --<br>Jánosháza 9:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>9:40</td><td><img src=""><p id="p2">466 KÁLMÁN InterCity</p><br>9:40 Jánosháza --<br>Szolnok 10:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>9:40</td><td><img src=""><p id="p2">467 KÁLMÁN InterCity</p><br>9:40 Jánosháza --<br>Székesfehérvár 10:57</td><td>7</td></tr>
+        <tr><td>9:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>9:30 Falusi Temető --<br>Jánosháza 9:45</td><td>13</td></tr>
+        <tr><td>9:48</td><td>&nbsp;</td><td><img src=""><p id="p2">410 HOLDFÉNY EuroCity</p><br>6:40 Wien HBF --<br>Jánosháza 9:48</td><td>5</td></tr>
+        <tr><td>&nbsp;</td><td>9:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>9:49 Jánosháza --<br>Martinovics Tér 10:19</td><td>12</td></tr>
+        <tr><td>9:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4627 KÁLMÁN InterCity</p><br>8:35 Szolnok --<br>Jánosháza 9:50</td><td>7</td></tr>
+        <tr><td>9:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4628 KÁLMÁN InterCity</p><br>8:33 Székesfehérvár --<br>Jánosháza 9:50</td><td>7</td></tr>
+        <tr><td>9:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4220 KŐBÁNYA InterCity</p><br>9:10 Kőbánya-Kispest --<br>Jánosháza 9:52</td><td>9</td></tr>
+        <tr><td>9:54</td><td>9:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>9:49 Maglód Ófalu --<br>Ligetszentisván 9:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>9:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>9:55 Jánosháza --<br>Falusi Temető 10:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>9:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>9:57 Jánosháza --<br>Maglód Auchan 10:29</td><td>10</td></tr>
+        <tr><td>9:58</td><td>&nbsp;</td><td><img src=""><p id="p2">406 HOLDFÉNY EuroNight</p><br>16:19 Bucuresti Nord --<br>Jánosháza 9:58</td><td>4</td></tr>
+        <tr><td>&nbsp;</td><td>10:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>10:00 Jánosháza --<br>Maglód FP 10:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>10:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>10:00 Jánosháza --<br>Budapest-Keleti 10:34</td><td>3</td></tr>
+        <tr><td>&nbsp;</td><td>10:02</td><td><img src=""><p id="p2">4202 KŐBÁNYA InterCity</p><br>10:02 Jánosháza --<br>Kőbánya-Kispest 10:53</td><td>9</td></tr>
+        <tr><td>10:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>9:31 Budapest-Keleti --<br>Jánosháza 10:05</td><td>3</td></tr>
+        <tr><td>10:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>9:40 Maglód FP --<br>Jánosháza 10:05</td><td>11</td></tr>
+        <tr><td>10:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>9:35 Maglód Auchan --<br>Jánosháza 10:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>10:10</td><td><img src=""><p id="p2">438 PETŐFI InterCity</p><br>10:10 Jánosháza --<br>Klenovatelep 10:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>10:10</td><td><img src=""><p id="p2">439 PETŐFI InterCity</p><br>10:10 Jánosháza --<br>Kelenföld 10:42</td><td>8</td></tr>
+        <tr><td>10:14</td><td>10:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>9:48 Budapest-Keleti --<br>Maglód Kelet 10:40</td><td>2</td></tr>
+        <tr><td>10:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4331 PETŐFI InterCity</p><br>9:43 Kelenföld --<br>Jánosháza 10:15</td><td>8</td></tr>
+        <tr><td>10:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>10:00 Falusi Temető --<br>Jánosháza 10:15</td><td>13</td></tr>
+        <tr><td>10:19</td><td>10:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>9:54 Maglód Kelet --<br>Budapest-Keleti 10:47</td><td>1</td></tr>
+        <tr><td>10:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>9:50 Martinovics Tér --<br>Jánosháza 10:20</td><td>12</td></tr>
+        <tr><td>10:24</td><td>10:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>10:22 Ligetszentistván --<br>Maglód Ófalu 10:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>10:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>10:25 Jánosháza --<br>Falusi Temető 10:40</td><td>13</td></tr>
+        <tr><td>10:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4332 PETŐFI InterCity</p><br>9:39 Klenovatelep --<br>Jánosháza 10:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>10:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>10:27 Jánosháza --<br>Maglód Auchan 10:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>10:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>10:30 Jánosháza --<br>Maglód FP 10:55</td><td>11</td></tr>
+        <tr><td>10:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>10:10 Maglód FP --<br>Jánosháza 10:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>10:35</td><td><img src=""><p id="p2">474 FENYŐ InterCity</p><br>10:35 Jánosháza --<br>Lőkösháza 13:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>10:35</td><td><img src=""><p id="p2">475 FENYŐ InterCity</p><br>10:35 Jánosháza --<br>Veszprém 12:53</td><td>6</td></tr>
+        <tr><td>10:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>10:05 Maglód Auchan --<br>Jánosháza 10:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>10:40</td><td><img src=""><p id="p2">468 KÁLMÁN InterCity</p><br>10:40 Jánosháza --<br>Szolnok 11:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>10:40</td><td><img src=""><p id="p2">469 KÁLMÁN InterCity</p><br>10:40 Jánosháza --<br>Székesfehérvár 11:57</td><td>7</td></tr>
+        <!-- *<tr><td>10:42</td><td>10:43</td><td><img src=""> <p id="p1">EX 17867 Balaton Expressz</p><br>10:20 Maglód FP --<br>Fonyód 12:46</td><td>8</td></tr> -->
+        <tr><td>10:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>10:30 Falusi Temető --<br>Jánosháza 10:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>10:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>10:49 Jánosháza --<br>Martinovics Tér 11:19</td><td>12</td></tr>
+        <tr><td>10:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4221 KŐBÁNYA InterCity</p><br>10:10 Kőbánya-Kispest --<br>Jánosháza 10:50</td><td>9</td></tr>
+        <tr><td>10:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4629 KÁLMÁN InterCity</p><br>9:35 Szolnok --<br>Jánosháza 10:50</td><td>7</td></tr>
+        <tr><td>10:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4630 KÁLMÁN InterCity</p><br>9:33 Székesfehérvár --<br>Jánosháza 10:50</td><td>7</td></tr>
+        <tr><td>10:54</td><td>10:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>10:49 Maglód Ófalu --<br>Ligetszentisván 10:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>10:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>10:55 Jánosháza --<br>Falusi Temető 11:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>10:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>10:57 Jánosháza --<br>Maglód Auchan 11:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>11:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>11:00 Jánosháza --<br>Maglód FP 11:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>11:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>11:00 Jánosháza --<br>Budapest-Keleti 11:34</td><td>3</td></tr>
+        <tr><td>11:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4709 FENYŐ InterCity</p><br>8:19 Lőkösháza --<br>Jánosháza 11:00</td><td>6</td></tr>
+        <tr><td>11:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4710 FENYŐ InterCity</p><br>8:51 Veszprém --<br>Jánosháza 11:00</td><td>6</td></tr>
+        <tr><td>11:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>10:31 Budapest-Keleti --<br>Jánosháza 11:05</td><td>3</td></tr>
+        <tr><td>11:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>10:40 Maglód FP --<br>Jánosháza 11:05</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>11:07</td><td><img src=""><p id="p2">4203 KŐBÁNYA InterCity</p><br>11:07 Jánosháza --<br>Kőbánya-Kispest 11:58</td><td>9</td></tr>
+        <tr><td>11:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>10:35 Maglód Auchan --<br>Jánosháza 11:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>11:10</td><td><img src=""><p id="p2">4301 PETŐFI InterCity</p><br>11:10 Jánosháza --<br>Klenovatelep 11:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>11:10</td><td><img src=""><p id="p2">4302 PETŐFI InterCity</p><br>11:10 Jánosháza --<br>Kelenföld 11:42</td><td>8</td></tr>
+        <tr><td>11:14</td><td>11:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>10:48 Budapest-Keleti --<br>Maglód Kelet 11:40</td><td>2</td></tr>
+        <tr><td>11:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4333 PETŐFI InterCity</p><br>10:43 Kelenföld --<br>Jánosháza 11:15</td><td>8</td></tr>
+        <tr><td>11:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>11:00 Falusi Temető --<br>Jánosháza 11:15</td><td>13</td></tr>
+        <tr><td>11:19</td><td>11:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>10:54 Maglód Kelet --<br>Budapest-Keleti 11:47</td><td>1</td></tr>
+        <tr><td>11:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>10:50 Martinovics Tér --<br>Jánosháza 11:20</td><td>12</td></tr>
+        <tr><td>11:24</td><td>11:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>11:22 Ligetszentistván --<br>Maglód Ófalu 11:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>11:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>11:25 Jánosháza --<br>Falusi Temető 11:40</td><td>13</td></tr>
+        <tr><td>11:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4334 PETŐFI InterCity</p><br>10:39 Klenovatelep --<br>Jánosháza 11:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>11:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>11:27 Jánosháza --<br>Maglód Auchan 11:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>11:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>11:30 Jánosháza --<br>Maglód FP 11:55</td><td>11</td></tr>
+        <tr><td>11:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>11:10 Maglód FP --<br>Jánosháza 11:35</td><td>11</td></tr>
+        <tr><td>11:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>11:05 Maglód Auchan --<br>Jánosháza 11:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>11:40</td><td><img src=""><p id="p2">4601 KÁLMÁN InterCity</p><br>11:40 Jánosháza --<br>Szolnok 12:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>11:40</td><td><img src=""><p id="p2">4602 KÁLMÁN InterCity</p><br>11:40 Jánosháza --<br>Székesfehérvár 12:57</td><td>7</td></tr>
+        <tr><td>11:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>11:30 Falusi Temető --<br>Jánosháza 11:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>11:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>11:49 Jánosháza --<br>Martinovics Tér 12:19</td><td>12</td></tr>
+        <tr><td>11:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4631 KÁLMÁN InterCity</p><br>10:35 Szolnok --<br>Jánosháza 11:50</td><td>7</td></tr>
+        <tr><td>11:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4632 KÁLMÁN InterCity</p><br>10:33 Székesfehérvár --<br>Jánosháza 11:50</td><td>7</td></tr>
+        <tr><td>11:54</td><td>11:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>11:49 Maglód Ófalu --<br>Ligetszentisván 11:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>11:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>11:55 Jánosháza --<br>Falusi Temető 12:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>11:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>11:57 Jánosháza --<br>Maglód Auchan 12:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>12:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>12:00 Jánosháza --<br>Maglód FP 12:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>12:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>12:00 Jánosháza --<br>Budapest-Keleti 12:34</td><td>3</td></tr>
+        <tr><td>12:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4222 KŐBÁNYA InterCity</p><br>11:10 Kőbánya-Kispest --<br>Jánosháza 12:00</td><td>9</td></tr>
+        <tr><td>12:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>11:31 Budapest-Keleti --<br>Jánosháza 12:05</td><td>3</td></tr>
+        <tr><td>12:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>11:40 Maglód FP --<br>Jánosháza 12:05</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>12:07</td><td><img src=""><p id="p2">4204 KŐBÁNYA InterCity</p><br>12:07 Jánosháza --<br>Kőbánya-Kispest 12:57</td><td>9</td></tr>
+        <tr><td>12:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>11:35 Maglód Auchan --<br>Jánosháza 12:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>12:10</td><td><img src=""><p id="p2">4303 PETŐFI InterCity</p><br>12:10 Jánosháza --<br>Klenovatelep 12:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>12:10</td><td><img src=""><p id="p2">4304 PETŐFI InterCity</p><br>12:10 Jánosháza --<br>Kelenföld 12:42</td><td>8</td></tr>
+        <tr><td>12:14</td><td>12:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>11:48 Budapest-Keleti --<br>Maglód Kelet 12:40</td><td>2</td></tr>
+        <tr><td>12:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4335 PETŐFI InterCity</p><br>11:43 Kelenföld --<br>Jánosháza 12:15</td><td>8</td></tr>
+        <tr><td>12:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>12:00 Falusi Temető --<br>Jánosháza 12:15</td><td>13</td></tr>
+        <tr><td>12:19</td><td>12:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>11:54 Maglód Kelet --<br>Budapest-Keleti 12:47</td><td>1</td></tr>
+        <tr><td>12:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>11:50 Martinovics Tér --<br>Jánosháza 12:20</td><td>12</td></tr>
+        <tr><td>12:24</td><td>12:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>12:22 Ligetszentistván --<br>Maglód Ófalu 12:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>12:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>12:25 Jánosháza --<br>Falusi Temető 12:40</td><td>13</td></tr>
+        <tr><td>12:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4336 PETŐFI InterCity</p><br>11:39 Klenovatelep --<br>Jánosháza 12:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>12:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>12:27 Jánosháza --<br>Maglód Auchan 12:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>12:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>12:30 Jánosháza --<br>Maglód FP 12:55</td><td>11</td></tr>
+        <tr><td>12:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>12:10 Maglód FP --<br>Jánosháza 12:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>12:35</td><td><img src=""><p id="p2">476 FENYŐ InterCity</p><br>12:35 Jánosháza --<br>Lőkösháza 15:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>12:35</td><td><img src=""><p id="p2">477 FENYŐ InterCity</p><br>12:35 Jánosháza --<br>Veszprém 14:53</td><td>6</td></tr>
+        <tr><td>12:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>12:05 Maglód Auchan --<br>Jánosháza 12:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>12:40</td><td><img src=""><p id="p2">4603 KÁLMÁN InterCity</p><br>12:40 Jánosháza --<br>Szolnok 13:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>12:40</td><td><img src=""><p id="p2">4604 KÁLMÁN InterCity</p><br>12:40 Jánosháza --<br>Székesfehérvár 13:57</td><td>7</td></tr>
+       <!-- *<tr><td>12:42</td><td>12:43</td><td><img src=""> <p id="p1">EX 17868 Balaton Expressz</p><br>12:20 Maglód FP --<br>Fonyód 14:46</td><td>8</td></tr> -->
+        <tr><td>12:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>12:30 Falusi Temető --<br>Jánosháza 12:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>12:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>12:49 Jánosháza --<br>Martinovics Tér 13:19</td><td>12</td></tr>
+        <tr><td>12:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4633 KÁLMÁN InterCity</p><br>11:35 Szolnok --<br>Jánosháza 12:50</td><td>7</td></tr>
+        <tr><td>12:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4634 KÁLMÁN InterCity</p><br>11:33 Székesfehérvár --<br>Jánosháza 12:50</td><td>7</td></tr>
+        <tr><td>12:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4223 KŐBÁNYA InterCity</p><br>12:10 Kőbánya-Kispest --<br>Jánosháza 12:52</td><td>9</td></tr>
+        <tr><td>12:54</td><td>12:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>12:49 Maglód Ófalu --<br>Ligetszentisván 12:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>12:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>12:55 Jánosháza --<br>Falusi Temető 13:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>12:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>12:57 Jánosháza --<br>Maglód Auchan 13:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>13:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>13:00 Jánosháza --<br>Maglód FP 13:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>13:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>13:00 Jánosháza --<br>Budapest-Keleti 13:34</td><td>3</td></tr>
+        <tr><td>13:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4711 FENYŐ InterCity</p><br>10:19 Lőkösháza --<br>Jánosháza 13:00</td><td>6</td></tr>
+        <tr><td>13:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4712 FENYŐ InterCity</p><br>10:51 Veszprém --<br>Jánosháza 13:00</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>13:04</td><td><img src=""><p id="p2">4205 KŐBÁNYA InterCity</p><br>13:04 Jánosháza --<br>Kőbánya-Kispest 13:54</td><td>9</td></tr>
+        <tr><td>13:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>12:31 Budapest-Keleti --<br>Jánosháza 13:05</td><td>3</td></tr>
+        <tr><td>13:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>12:40 Maglód FP --<br>Jánosháza 13:05</td><td>11</td></tr>
+        <tr><td>13:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>12:35 Maglód Auchan --<br>Jánosháza 13:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>13:10</td><td><img src=""><p id="p2">4305 PETŐFI InterCity</p><br>13:10 Jánosháza --<br>Klenovatelep 13:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>13:10</td><td><img src=""><p id="p2">4306 PETŐFI InterCity</p><br>13:10 Jánosháza --<br>Kelenföld 13:42</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>13:12</td><td><img src=""><p id="p2">411 HOLDFÉNY EuroCity</p><br>7:36 Arad --<br>Jánosháza 13:12</td><td>5</td></tr>
+        <tr><td>13:14</td><td>13:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>12:48 Budapest-Keleti --<br>Maglód Kelet 13:40</td><td>2</td></tr>
+        <tr><td>13:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4337 PETŐFI InterCity</p><br>12:43 Kelenföld --<br>Jánosháza 13:15</td><td>8</td></tr>
+        <tr><td>13:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>13:00 Falusi Temető --<br>Jánosháza 13:15</td><td>13</td></tr>
+        <tr><td>13:19</td><td>13:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>12:54 Maglód Kelet --<br>Budapest-Keleti 13:47</td><td>1</td></tr>
+        <tr><td>13:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>12:50 Martinovics Tér --<br>Jánosháza 13:20</td><td>12</td></tr>
+        <tr><td>13:24</td><td>13:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>5:22 Ligetszentistván --<br>Maglód Ófalu 13:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>13:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>13:25 Jánosháza --<br>Falusi Temető 13:40</td><td>13</td></tr>
+        <tr><td>13:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4338 PETŐFI InterCity</p><br>12:39 Klenovatelep --<br>Jánosháza 13:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>13:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>13:27 Jánosháza --<br>Maglód Auchan 13:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>13:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>13:30 Jánosháza --<br>Maglód FP 13:55</td><td>11</td></tr>
+        <tr><td>13:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>13:10 Maglód FP --<br>Jánosháza 13:35</td><td>11</td></tr>
+        <tr><td>13:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>13:05 Maglód Auchan --<br>Jánosháza 13:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>13:40</td><td><img src=""><p id="p2">4605 KÁLMÁN InterCity</p><br>13:40 Jánosháza --<br>Szolnok 14:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>13:40</td><td><img src=""><p id="p2">4606 KÁLMÁN InterCity</p><br>13:40 Jánosháza --<br>Székesfehérvár 14:57</td><td>7</td></tr>
+        <tr><td>13:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>13:30 Falusi Temető --<br>Jánosháza 13:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>13:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>13:49 Jánosháza --<br>Martinovics Tér 14:19</td><td>12</td></tr>
+        <tr><td>13:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4635 KÁLMÁN InterCity</p><br>12:35 Szolnok --<br>Jánosháza 13:50</td><td>7</td></tr>
+        <tr><td>13:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4636 KÁLMÁN InterCity</p><br>12:33 Székesfehérvár --<br>Jánosháza 13:50</td><td>7</td></tr>
+        <tr><td>13:54</td><td>13:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>13:49 Maglód Ófalu --<br>Ligetszentisván 13:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>13:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>13:55 Jánosháza --<br>Falusi Temető 14:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>13:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>13:57 Jánosháza --<br>Maglód Auchan 14:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>14:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>14:00 Jánosháza --<br>Maglód FP 14:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>14:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>14:00 Jánosháza --<br>Budapest-Keleti 14:34</td><td>3</td></tr>
+        <tr><td>14:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4224 KŐBÁNYA InterCity</p><br>13:10 Kőbánya-Kispest --<br>Jánosháza 14:00</td><td>9</td></tr>
+        <tr><td>14:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>13:31 Budapest-Keleti --<br>Jánosháza 14:05</td><td>3</td></tr>
+        <tr><td>14:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>13:40 Maglód FP --<br>Jánosháza 14:05</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>14:07</td><td><img src=""><p id="p2">4206 KŐBÁNYA InterCity</p><br>14:07 Jánosháza --<br>Kőbánya-Kispest 14:57</td><td>9</td></tr>
+        <tr><td>14:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>13:35 Maglód Auchan --<br>Jánosháza 14:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>14:10</td><td><img src=""><p id="p2">4307 PETŐFI InterCity</p><br>14:10 Jánosháza --<br>Klenovatelep 14:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>14:10</td><td><img src=""><p id="p2">4308 PETŐFI InterCity</p><br>14:10 Jánosháza --<br>Kelenföld 14:42</td><td>8</td></tr>
+        <tr><td>14:14</td><td>14:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>13:48 Budapest-Keleti --<br>Maglód Kelet 14:40</td><td>2</td></tr>
+        <tr><td>14:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4339 PETŐFI InterCity</p><br>13:43 Kelenföld --<br>Jánosháza 14:15</td><td>8</td></tr>
+        <tr><td>14:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>14:00 Falusi Temető --<br>Jánosháza 14:15</td><td>13</td></tr>
+        <tr><td>14:19</td><td>14:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>13:54 Maglód Kelet --<br>Budapest-Keleti 14:47</td><td>1</td></tr>
+        <tr><td>14:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>13:50 Martinovics Tér --<br>Jánosháza 14:20</td><td>12</td></tr>
+        <tr><td>14:24</td><td>14:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>14:22 Ligetszentistván --<br>Maglód Ófalu 14:30</td><td>1a</td></tr>
+         <tr><td>&nbsp;</td><td>14:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>14:25 Jánosháza --<br>Falusi Temető 14:40</td><td>13</td></tr>
+        <tr><td>14:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4340 PETŐFI InterCity</p><br>13:39 Klenovatelep --<br>Jánosháza 14:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>14:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>14:27 Jánosháza --<br>Maglód Auchan 14:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>14:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>14:30 Jánosháza --<br>Maglód FP 14:55</td><td>11</td></tr>
+        <tr><td>14:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>14:10 Maglód FP --<br>Jánosháza 14:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>14:35</td><td><img src=""><p id="p2">478 FENYŐ InterCity</p><br>14:35 Jánosháza --<br>Lőkösháza 17:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>14:35</td><td><img src=""><p id="p2">479 FENYŐ InterCity</p><br>14:35 Jánosháza --<br>Veszprém 16:53</td><td>6</td></tr>
+        <tr><td>14:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>14:05 Maglód Auchan --<br>Jánosháza 14:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>14:40</td><td><img src=""><p id="p2">4607 KÁLMÁN InterCity</p><br>14:40 Jánosháza --<br>Szolnok 15:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>14:40</td><td><img src=""><p id="p2">4608 KÁLMÁN InterCity</p><br>14:40 Jánosháza --<br>Székesfehérvár 15:57</td><td>7</td></tr>
+        <tr><td>14:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>14:30 Falusi Temető --<br>Jánosháza 14:45</td><td>13</td></tr>
+        <tr><td>14:48</td><td>&nbsp;</td><td><img src=""><p id="p2">412 HOLDFÉNY EuroCity</p><br>8:18 Zagreb --<br>Jánosháza 14:48</td><td>3</td></tr>
+        <tr><td>&nbsp;</td><td>14:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>14:49 Jánosháza --<br>Martinovics Tér 15:19</td><td>12</td></tr>
+        <tr><td>14:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4637 KÁLMÁN InterCity</p><br>13:35 Szolnok --<br>Jánosháza 14:50</td><td>7</td></tr>
+        <tr><td>14:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4638 KÁLMÁN InterCity</p><br>13:33 Székesfehérvár --<br>Jánosháza 14:50</td><td>7</td></tr>
+        <tr><td>14:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4225 KŐBÁNYA InterCity</p><br>14:10 Kőbánya-Kispest --<br>Jánosháza 14:52</td><td>9</td></tr>
+        <tr><td>14:54</td><td>14:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>14:49 Maglód Ófalu --<br>Ligetszentisván 14:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>14:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>14:55 Jánosháza --<br>Falusi Temető 15:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>14:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>14:57 Jánosháza --<br>Maglód Auchan 15:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>15:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>15:00 Jánosháza --<br>Maglód FP 15:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>15:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>15:00 Jánosháza --<br>Budapest-Keleti 15:34</td><td>3</td></tr>
+        <tr><td>15:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4713 FENYŐ InterCity</p><br>12:19 Lőkösháza --<br>Jánosháza 15:00</td><td>6</td></tr>
+        <tr><td>15:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4714 FENYŐ InterCity</p><br>12:51 Veszprém --<br>Jánosháza 15:00</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>15:04</td><td><img src=""><p id="p2">4207 KŐBÁNYA InterCity</p><br>15:04 Jánosháza --<br>Kőbánya-Kispest 15:50</td><td>9</td></tr>
+        <tr><td>15:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>14:31 Budapest-Keleti --<br>Jánosháza 15:05</td><td>3</td></tr>
+        <tr><td>15:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>14:40 Maglód FP --<br>Jánosháza 15:05</td><td>11</td></tr>
+        <tr><td>15:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>14:35 Maglód Auchan --<br>Jánosháza 15:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>15:10</td><td><img src=""><p id="p2">4309 PETŐFI InterCity</p><br>15:10 Jánosháza --<br>Klenovatelep 15:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>15:10</td><td><img src=""><p id="p2">4310 PETŐFI InterCity</p><br>15:10 Jánosháza --<br>Kelenföld 15:42</td><td>8</td></tr>
+        <tr><td>15:14</td><td>15:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>14:48 Budapest-Keleti --<br>Maglód Kelet 15:40</td><td>2</td></tr>
+        <tr><td>15:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4341 PETŐFI InterCity</p><br>14:43 Kelenföld --<br>Jánosháza 15:15</td><td>8</td></tr>
+        <tr><td>15:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>15:00 Falusi Temető --<br>Jánosháza 15:15</td><td>13</td></tr>
+        <tr><td>15:19</td><td>15:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>14:54 Maglód Kelet --<br>Budapest-Keleti 15:47</td><td>1</td></tr>
+       <!-- *<tr><td>15:19</td><td>15:22</td><td><img src=""> <p id="p1">EX 17869 Balaton Expressz</p><br>13:16 Fonyód --<br>Maglód FP 15:45</td><td>8</td></tr> -->
+        <tr><td>15:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>14:50 Martinovics Tér --<br>Jánosháza 15:20</td><td>12</td></tr>
+        <tr><td>15:22</td><td>&nbsp;</td><td><img src=""><p id="p2">4226 KŐBÁNYA InterCity</p><br>14:40 Kőbánya-Kispest --<br>Jánosháza 15:22</td><td>9</td></tr>
+        <tr><td>15:24</td><td>15:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>15:22 Ligetszentistván --<br>Maglód Ófalu 15:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>15:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>15:25 Jánosháza --<br>Falusi Temető 15:40</td><td>13</td></tr>
+        <tr><td>15:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4342 PETŐFI InterCity</p><br>14:39 Klenovatelep --<br>Jánosháza 15:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>15:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>15:27 Jánosháza --<br>Maglód Auchan 15:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>15:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>15:30 Jánosháza --<br>Maglód FP 15:55</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>15:34</td><td><img src=""><p id="p2">4208 KŐBÁNYA InterCity</p><br>15:34 Jánosháza --<br>Kőbánya-Kispest 16:15</td><td>9</td></tr>
+        <tr><td>15:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>15:10 Maglód FP --<br>Jánosháza 15:35</td><td>11</td></tr>
+        <tr><td>15:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>15:05 Maglód Auchan --<br>Jánosháza 15:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>15:40</td><td><img src=""><p id="p2">4609 KÁLMÁN InterCity</p><br>15:40 Jánosháza --<br>Szolnok 16:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>15:40</td><td><img src=""><p id="p2">4610 KÁLMÁN InterCity</p><br>15:40 Jánosháza --<br>Székesfehérvár 16:57</td><td>7</td></tr>
+        <tr><td>15:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>15:30 Falusi Temető --<br>Jánosháza 15:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>15:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>15:49 Jánosháza --<br>Martinovics Tér 16:19</td><td>12</td></tr>
+        <tr><td>15:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4639 KÁLMÁN InterCity</p><br>14:35 Szolnok --<br>Jánosháza 15:50</td><td>7</td></tr>
+        <tr><td>15:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4640 KÁLMÁN InterCity</p><br>14:33 Székesfehérvár --<br>Jánosháza 15:50</td><td>7</td></tr>
+        <tr><td>15:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4227 KŐBÁNYA InterCity</p><br>15:10 Kőbánya-Kispest --<br>Jánosháza 15:52</td><td>9</td></tr>
+        <tr><td>15:54</td><td>15:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>15:49 Maglód Ófalu --<br>Ligetszentisván 15:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>15:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>15:55 Jánosháza --<br>Falusi Temető 16:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>15:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>15:57 Jánosháza --<br>Maglód Auchan 16:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>16:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>16:00 Jánosháza --<br>Maglód FP 16:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>16:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>16:00 Jánosháza --<br>Budapest-Keleti 16:34</td><td>3</td></tr>
+        <tr><td>&nbsp;</td><td>16:04</td><td><img src=""><p id="p2">4209 KŐBÁNYA InterCity</p><br>16:04 Jánosháza --<br>Kőbánya-Kispest 16:54</td><td>9</td></tr>
+        <tr><td>16:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>15:31 Budapest-Keleti --<br>Jánosháza 16:05</td><td>3</td></tr>
+        <tr><td>16:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>15:40 Maglód FP --<br>Jánosháza 16:05</td><td>11</td></tr>
+        <tr><td>16:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>15:35 Maglód Auchan --<br>Jánosháza 16:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>16:10</td><td><img src=""><p id="p2">4311 PETŐFI InterCity</p><br>16:10 Jánosháza --<br>Klenovatelep 16:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>16:10</td><td><img src=""><p id="p2">4312 PETŐFI InterCity</p><br>16:10 Jánosháza --<br>Kelenföld 16:42</td><td>8</td></tr>
+        <tr><td>16:14</td><td>16:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>15:48 Budapest-Keleti --<br>Maglód Kelet 16:40</td><td>2</td></tr>
+        <tr><td>16:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4343 PETŐFI InterCity</p><br>15:43 Kelenföld --<br>Jánosháza 16:15</td><td>8</td></tr>
+        <tr><td>16:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>16:00 Falusi Temető --<br>Jánosháza 16:15</td><td>13</td></tr>
+        <tr><td>16:19</td><td>16:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>15:54 Maglód Kelet --<br>Budapest-Keleti 16:47</td><td>1</td></tr>
+        <tr><td>16:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>15:50 Martinovics Tér --<br>Jánosháza 16:20</td><td>12</td></tr>
+        <tr><td>16:22</td><td>&nbsp;</td><td><img src=""><p id="p2">4228 KŐBÁNYA InterCity</p><br>15:40 Kőbánya-Kispest --<br>Jánosháza 16:22</td><td>9</td></tr>
+        <tr><td>16:24</td><td>16:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>16:22 Ligetszentistván --<br>Maglód Ófalu 16:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>16:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>16:25 Jánosháza --<br>Falusi Temető 16:40</td><td>13</td></tr>
+        <tr><td>16:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4344 PETŐFI InterCity</p><br>15:39 Klenovatelep --<br>Jánosháza 16:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>16:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>16:27 Jánosháza --<br>Maglód Auchan 16:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>16:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>16:30 Jánosháza --<br>Maglód FP 16:55</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>16:34</td><td><img src=""><p id="p2">4210 KŐBÁNYA InterCity</p><br>16:34 Jánosháza --<br>Kőbánya-Kispest 17:15</td><td>9</td></tr>
+        <tr><td>16:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>16:10 Maglód FP --<br>Jánosháza 16:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>16:35</td><td><img src=""><p id="p2">4701 FENYŐ InterCity</p><br>16:35 Jánosháza --<br>Lőkösháza 19:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>16:35</td><td><img src=""><p id="p2">4702 FENYŐ InterCity</p><br>16:35 Jánosháza --<br>Veszprém 18:53</td><td>6</td></tr>
+        <tr><td>16:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>16:05 Maglód Auchan --<br>Jánosháza 16:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>16:40</td><td><img src=""><p id="p2">4611 KÁLMÁN InterCity</p><br>16:40 Jánosháza --<br>Szolnok 17:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>16:40</td><td><img src=""><p id="p2">4612 KÁLMÁN InterCity</p><br>16:40 Jánosháza --<br>Székesfehérvár 17:57</td><td>7</td></tr>
+        <tr><td>16:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>16:30 Falusi Temető --<br>Jánosháza 16:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>16:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>16:49 Jánosháza --<br>Martinovics Tér 17:19</td><td>12</td></tr>
+        <tr><td>16:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4641 KÁLMÁN InterCity</p><br>15:35 Szolnok --<br>Jánosháza 16:50</td><td>7</td></tr>
+        <tr><td>16:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4642 KÁLMÁN InterCity</p><br>15:33 Székesfehérvár --<br>Jánosháza 16:50</td><td>7</td></tr>
+        <tr><td>16:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4229 KŐBÁNYA InterCity</p><br>16:10 Kőbánya-Kispest --<br>Jánosháza 16:52</td><td>9</td></tr>
+        <tr><td>16:54</td><td>16:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>16:49 Maglód Ófalu --<br>Ligetszentisván 16:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>16:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>16:55 Jánosháza --<br>Falusi Temető 17:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>16:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>16:57 Jánosháza --<br>Maglód Auchan 17:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>17:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>17:00 Jánosháza --<br>Maglód FP 17:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>17:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>17:00 Jánosháza --<br>Budapest-Keleti 17:34</td><td>3</td></tr>
+        <tr><td>17:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4715 FENYŐ InterCity</p><br>14:19 Lőkösháza --<br>Jánosháza 17:00</td><td>6</td></tr>
+        <tr><td>17:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4716 FENYŐ InterCity</p><br>14:51 Veszprém --<br>Jánosháza 17:00</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>17:04</td><td><img src=""><p id="p2">4211 KŐBÁNYA InterCity</p><br>17:04 Jánosháza --<br>Kőbánya-Kispest 17:54</td><td>9</td></tr>
+        <tr><td>17:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>16:31 Budapest-Keleti --<br>Jánosháza 17:05</td><td>3</td></tr>
+        <tr><td>17:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>16:40 Maglód FP --<br>Jánosháza 17:05</td><td>11</td></tr>
+        <tr><td>17:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>16:35 Maglód Auchan --<br>Jánosháza 17:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>17:10</td><td><img src=""><p id="p2">4313 PETŐFI InterCity</p><br>17:10 Jánosháza --<br>Klenovatelep 17:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>17:10</td><td><img src=""><p id="p2">4314 PETŐFI InterCity</p><br>17:10 Jánosháza --<br>Kelenföld 17:42</td><td>8</td></tr>
+        <tr><td>17:14</td><td>17:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>16:48 Budapest-Keleti --<br>Maglód Kelet 17:40</td><td>2</td></tr>
+        <tr><td>17:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4345 PETŐFI InterCity</p><br>16:43 Kelenföld --<br>Jánosháza 17:15</td><td>8</td></tr>
+        <tr><td>17:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>17:00 Falusi Temető --<br>Jánosháza 17:15</td><td>13</td></tr>
+        <tr><td>17:19</td><td>17:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>16:54 Maglód Kelet --<br>Budapest-Keleti 17:47</td><td>1</td></tr>
+       <!-- *<tr><td>17:19</td><td>17:22</td><td><img src=""> <p id="p1">EX 17870 Balaton Expressz</p><br>15:16 Fonyód --<br>Maglód FP 17:45</td><td>8</td></tr> -->
+        <tr><td>17:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>16:50 Martinovics Tér --<br>Jánosháza 17:20</td><td>12</td></tr>
+        <tr><td>17:24</td><td>17:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>17:22 Ligetszentistván --<br>Maglód Ófalu 17:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>17:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>17:25 Jánosháza --<br>Falusi Temető 17:40</td><td>13</td></tr>
+        <tr><td>17:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4346 PETŐFI InterCity</p><br>16:39 Klenovatelep --<br>Jánosháza 17:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>17:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>17:27 Jánosháza --<br>Maglód Auchan 17:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>17:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>17:30 Jánosháza --<br>Maglód FP 17:55</td><td>11</td></tr>
+        <tr><td>17:30</td><td>&nbsp;</td><td><img src=""><p id="p2">4230 KŐBÁNYA InterCity</p><br>16:40 Kőbánya-Kispest --<br>Jánosháza 17:30</td><td>9</td></tr>
+        <tr><td>17:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>17:10 Maglód FP --<br>Jánosháza 17:35</td><td>11</td></tr>
+        <tr><td>17:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>17:05 Maglód Auchan --<br>Jánosháza 17:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>17:40</td><td><img src=""><p id="p2">4613 KÁLMÁN InterCity</p><br>17:40 Jánosháza --<br>Szolnok 18:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>17:40</td><td><img src=""><p id="p2">4614 KÁLMÁN InterCity</p><br>17:40 Jánosháza --<br>Székesfehérvár 18:57</td><td>7</td></tr>
+        <tr><td>17:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>17:30 Falusi Temető --<br>Jánosháza 17:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>17:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>17:49 Jánosháza --<br>Martinovics Tér 18:19</td><td>12</td></tr>
+        <tr><td>17:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4643 KÁLMÁN InterCity</p><br>16:35 Szolnok --<br>Jánosháza 17:50</td><td>7</td></tr>
+        <tr><td>17:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4644 KÁLMÁN InterCity</p><br>16:33 Székesfehérvár --<br>Jánosháza 17:50</td><td>7</td></tr>
+        <tr><td>17:54</td><td>17:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>17:49 Maglód Ófalu --<br>Ligetszentisván 17:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>17:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>17:55 Jánosháza --<br>Falusi Temető 18:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>17:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>17:57 Jánosháza --<br>Maglód Auchan 18:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>18:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>18:00 Jánosháza --<br>Maglód FP 18:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>18:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>18:00 Jánosháza --<br>Budapest-Keleti 18:34</td><td>3</td></tr>
+        <tr><td>18:01</td><td>&nbsp;</td><td><img src=""><p id="p2">4231 KŐBÁNYA InterCity</p><br>17:10 Kőbánya-Kispest --<br>Jánosháza 18:01</td><td>9</td></tr>
+        <tr><td>18:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>17:31 Budapest-Keleti --<br>Jánosháza 18:05</td><td>3</td></tr>
+        <tr><td>18:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>17:40 Maglód FP --<br>Jánosháza 18:05</td><td>11</td></tr>
+        <tr><td>18:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>17:35 Maglód Auchan --<br>Jánosháza 18:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>18:09</td><td><img src=""><p id="p2">4212 KŐBÁNYA InterCity</p><br>18:09 Jánosháza --<br>Kőbánya-Kispest 18:50</td><td>9</td></tr>
+        <tr><td>&nbsp;</td><td>18:10</td><td><img src=""><p id="p2">4315 PETŐFI InterCity</p><br>18:10 Jánosháza --<br>Klenovatelep 18:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>18:10</td><td><img src=""><p id="p2">4316 PETŐFI InterCity</p><br>18:10 Jánosháza --<br>Kelenföld 18:42</td><td>8</td></tr>
+        <tr><td>18:14</td><td>18:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>17:48 Budapest-Keleti --<br>Maglód Kelet 18:40</td><td>2</td></tr>
+        <tr><td>18:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4347 PETŐFI InterCity</p><br>17:43 Kelenföld --<br>Jánosháza 18:15</td><td>8</td></tr>
+        <tr><td>18:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>18:00 Falusi Temető --<br>Jánosháza 18:15</td><td>13</td></tr>
+        <tr><td>18:19</td><td>18:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>17:54 Maglód Kelet --<br>Budapest-Keleti 18:47</td><td>1</td></tr>
+        <tr><td>18:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>17:50 Martinovics Tér --<br>Jánosháza 18:20</td><td>12</td></tr>
+        <tr><td>18:22</td><td>&nbsp;</td><td><img src=""><p id="p2">4232 KŐBÁNYA InterCity</p><br>17:40 Kőbánya-Kispest --<br>Jánosháza 18:22</td><td>9</td></tr>
+        <tr><td>18:24</td><td>18:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>18:22 Ligetszentistván --<br>Maglód Ófalu 18:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>18:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>18:25 Jánosháza --<br>Falusi Temető 18:40</td><td>13</td></tr>
+        <tr><td>18:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4348 PETŐFI InterCity</p><br>17:39 Klenovatelep --<br>Jánosháza 18:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>18:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>18:27 Jánosháza --<br>Maglód Auchan 18:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>18:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>18:30 Jánosháza --<br>Maglód FP 18:55</td><td>11</td></tr>
+        <tr><td>18:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>18:10 Maglód FP --<br>Jánosháza 18:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>18:35</td><td><img src=""><p id="p2">4703 FENYŐ InterCity</p><br>18:35 Jánosháza --<br>Lőkösháza 21:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>18:35</td><td><img src=""><p id="p2">4704 FENYŐ InterCity</p><br>18:35 Jánosháza --<br>Veszprém 20:53</td><td>6</td></tr>
+        <tr><td>18:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>18:05 Maglód Auchan --<br>Jánosháza 18:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>18:40</td><td><img src=""><p id="p2">4615 KÁLMÁN InterCity</p><br>18:40 Jánosháza --<br>Szolnok 19:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>18:40</td><td><img src=""><p id="p2">4616 KÁLMÁN InterCity</p><br>18:40 Jánosháza --<br>Székesfehérvár 19:57</td><td>7</td></tr>
+        <tr><td>18:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>18:30 Falusi Temető --<br>Jánosháza 18:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>18:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>18:49 Jánosháza --<br>Martinovics Tér 19:19</td><td>12</td></tr>
+        <tr><td>18:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4645 KÁLMÁN InterCity</p><br>17:35 Szolnok --<br>Jánosháza 18:50</td><td>7</td></tr>
+        <tr><td>18:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4646 KÁLMÁN InterCity</p><br>17:33 Székesfehérvár --<br>Jánosháza 18:50</td><td>7</td></tr>
+        <tr><td>18:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4233 KŐBÁNYA InterCity</p><br>18:10 Kőbánya-Kispest --<br>Jánosháza 18:52</td><td>9</td></tr>
+        <tr><td>18:54</td><td>18:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>18:49 Maglód Ófalu --<br>Ligetszentisván 18:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>18:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>18:55 Jánosháza --<br>Falusi Temető 19:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>18:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>18:57 Jánosháza --<br>Maglód Auchan 19:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>19:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>19:00 Jánosháza --<br>Maglód FP 19:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>19:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>19:00 Jánosháza --<br>Budapest-Keleti 19:34</td><td>3</td></tr>
+        <tr><td>19:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4717 FENYŐ InterCity</p><br>16:19 Lőkösháza --<br>Jánosháza 19:00</td><td>6</td></tr>
+        <tr><td>19:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4718 FENYŐ InterCity</p><br>16:51 Veszprém --<br>Jánosháza 19:00</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>19:04</td><td><img src=""><p id="p2">4213 KŐBÁNYA InterCity</p><br>19:04 Jánosháza --<br>Kőbánya-Kispest 19:54</td><td>9</td></tr>
+        <tr><td>19:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>18:31 Budapest-Keleti --<br>Jánosháza 19:05</td><td>3</td></tr>
+        <tr><td>19:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>18:40 Maglód FP --<br>Jánosháza 19:05</td><td>11</td></tr>
+        <tr><td>19:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>18:35 Maglód Auchan --<br>Jánosháza 19:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>19:10</td><td><img src=""><p id="p2">4317 PETŐFI InterCity</p><br>19:10 Jánosháza --<br>Klenovatelep 19:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>19:10</td><td><img src=""><p id="p2">4318 PETŐFI InterCity</p><br>19:10 Jánosháza --<br>Kelenföld 19:42</td><td>8</td></tr>
+        <tr><td>19:14</td><td>19:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>18:48 Budapest-Keleti --<br>Maglód Kelet 19:40</td><td>2</td></tr>
+        <tr><td>19:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4349 PETŐFI InterCity</p><br>18:43 Kelenföld --<br>Jánosháza 19:15</td><td>8</td></tr>
+        <tr><td>19:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>19:00 Falusi Temető --<br>Jánosháza 19:15</td><td>13</td></tr>
+        <tr><td>19:19</td><td>19:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>18:54 Maglód Kelet --<br>Budapest-Keleti 19:47</td><td>1</td></tr>
+       <!-- *<tr><td>19:19</td><td>19:22</td><td><img src=""> <p id="p1">EX 17871 Balaton Expressz</p><br>17:16 Fonyód --<br>Maglód FP 19:45</td><td>8</td></tr> -->
+        <tr><td>19:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>18:50 Martinovics Tér --<br>Jánosháza 19:20</td><td>12</td></tr>
+        <tr><td>19:24</td><td>19:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>19:22 Ligetszentistván --<br>Maglód Ófalu 19:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>19:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>19:25 Jánosháza --<br>Falusi Temető 19:40</td><td>13</td></tr>
+        <tr><td>19:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4350 PETŐFI InterCity</p><br>18:39 Klenovatelep --<br>Jánosháza 19:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>19:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>19:27 Jánosháza --<br>Maglód Auchan 19:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>19:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>19:30 Jánosháza --<br>Maglód FP 19:55</td><td>11</td></tr>
+        <tr><td>19:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>19:10 Maglód FP --<br>Jánosháza 19:35</td><td>11</td></tr>
+        <tr><td>19:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>19:05 Maglód Auchan --<br>Jánosháza 19:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>19:40</td><td><img src=""><p id="p2">4617 KÁLMÁN InterCity</p><br>19:40 Jánosháza --<br>Szolnok 20:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>19:40</td><td><img src=""><p id="p2">4618 KÁLMÁN InterCity</p><br>19:40 Jánosháza --<br>Székesfehérvár 20:57</td><td>7</td></tr>
+        <tr><td>19:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>19:30 Falusi Temető --<br>Jánosháza 19:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>19:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>19:49 Jánosháza --<br>Martinovics Tér 20:19</td><td>12</td></tr>
+        <tr><td>19:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4647 KÁLMÁN InterCity</p><br>18:35 Szolnok --<br>Jánosháza 19:50</td><td>7</td></tr>
+        <tr><td>19:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4648 KÁLMÁN InterCity</p><br>18:33 Székesfehérvár --<br>Jánosháza 19:50</td><td>7</td></tr>
+        <tr><td>19:51</td><td>&nbsp;</td><td><img src=""><p id="p2">4234 KŐBÁNYA InterCity</p><br>19:00 Kőbánya-Kispest --<br>Jánosháza 19:51</td><td>9</td></tr>
+        <tr><td>19:54</td><td>19:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>19:49 Maglód Ófalu --<br>Ligetszentisván 19:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>19:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>19:55 Jánosháza --<br>Falusi Temető 20:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>19:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>19:57 Jánosháza --<br>Maglód Auchan 20:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>20:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>20:00 Jánosháza --<br>Maglód FP 20:25</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>20:00</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>20:00 Jánosháza --<br>Budapest-Keleti 20:34</td><td>3</td></tr>
+        <tr><td>&nbsp;</td><td>20:04</td><td><img src=""><p id="p2">4214 KŐBÁNYA InterCity</p><br>20:04 Jánosháza --<br>Kőbánya-Kispest 20:45</td><td>9</td></tr>
+        <tr><td>20:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>19:31 Budapest-Keleti --<br>Jánosháza 20:05</td><td>3</td></tr>
+        <tr><td>20:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>19:40 Maglód FP --<br>Jánosháza 20:05</td><td>11</td></tr>
+        <tr><td>20:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>19:35 Maglód Auchan --<br>Jánosháza 20:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>20:10</td><td><img src=""><p id="p2">4319 PETŐFI InterCity</p><br>20:10 Jánosháza --<br>Klenovatelep 20:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>20:10</td><td><img src=""><p id="p2">4320 PETŐFI InterCity</p><br>20:10 Jánosháza --<br>Kelenföld 20:42</td><td>8</td></tr>
+        <tr><td>20:14</td><td>20:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>19:48 Budapest-Keleti --<br>Maglód Kelet 20:40</td><td>2</td></tr>
+        <tr><td>20:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4351 PETŐFI InterCity</p><br>19:43 Kelenföld --<br>Jánosháza 20:15</td><td>8</td></tr>
+        <tr><td>20:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>20:00 Falusi Temető --<br>Jánosháza 20:15</td><td>13</td></tr>
+        <tr><td>20:19</td><td>20:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>19:54 Maglód Kelet --<br>Budapest-Keleti 20:47</td><td>1</td></tr>
+        <tr><td>20:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>19:50 Martinovics Tér --<br>Jánosháza 20:20</td><td>12</td></tr>
+        <tr><td>20:24</td><td>20:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>20:22 Ligetszentistván --<br>Maglód Ófalu 20:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>20:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>20:25 Jánosháza --<br>Falusi Temető 20:40</td><td>13</td></tr>
+        <tr><td>20:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4352 PETŐFI InterCity</p><br>19:39 Klenovatelep --<br>Jánosháza 20:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>20:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>20:27 Jánosháza --<br>Maglód Auchan 20:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>20:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>20:30 Jánosháza --<br>Maglód FP 20:55</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>20:30</td><td><img src=""><p id="p2">490 DUNA InterCity</p><br>20:30 Jánosháza --<br>Győr 22:08</td><td>5</td></tr>
+        <tr><td>20:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>20:10 Maglód FP --<br>Jánosháza 20:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>20:35</td><td><img src=""><p id="p2">4705 FENYŐ InterCity</p><br>20:35 Jánosháza --<br>Lőkösháza 23:16</td><td>6</td></tr>
+        <tr><td>&nbsp;</td><td>20:35</td><td><img src=""><p id="p2">4706 FENYŐ InterCity</p><br>20:35 Jánosháza --<br>Veszprém 22:53</td><td>6</td></tr>
+        <tr><td>20:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>20:05 Maglód Auchan --<br>Jánosháza 20:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>20:40</td><td><img src=""><p id="p2">4619 KÁLMÁN InterCity</p><br>20:40 Jánosháza --<br>Szolnok 21:55</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>20:40</td><td><img src=""><p id="p2">4620 KÁLMÁN InterCity</p><br>20:40 Jánosháza --<br>Székesfehérvár 21:57</td><td>7</td></tr>
+        <tr><td>&nbsp;</td><td>20:45</td><td><img src=""><p id="p2">491 DUNA InterCity</p><br>20:45 Jánosháza --<br>Debrecen 23:10</td><td>5</td></tr>
+        <tr><td>20:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>20:30 Falusi Temető --<br>Jánosháza 20:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>20:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>20:49 Jánosháza --<br>Martinovics Tér 21:19</td><td>12</td></tr>
+        <tr><td>20:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4649 KÁLMÁN InterCity</p><br>19:35 Szolnok --<br>Jánosháza 20:50</td><td>7</td></tr>
+        <tr><td>20:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4650 KÁLMÁN InterCity</p><br>19:33 Székesfehérvár --<br>Jánosháza 20:50</td><td>7</td></tr>
+        <tr><td>20:52</td><td>&nbsp;</td><td><img src=""><p id="p2">4235 KŐBÁNYA InterCity</p><br>20:10 Kőbánya-Kispest --<br>Jánosháza 20:52</td><td>9</td></tr>
+        <tr><td>20:54</td><td>20:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>20:49 Maglód Ófalu --<br>Ligetszentisván 20:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>20:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>20:55 Jánosháza --<br>Falusi Temető 21:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>20:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>20:57 Jánosháza --<br>Maglód Auchan 21:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>21:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>21:00 Jánosháza --<br>Maglód FP 21:25</td><td>11</td></tr>
+        <tr><td>21:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4719 FENYŐ InterCity</p><br>18:19 Lőkösháza --<br>Jánosháza 21:00</td><td>6</td></tr>
+        <tr><td>21:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4720 FENYŐ InterCity</p><br>18:51 Veszprém --<br>Jánosháza 21:00</td><td>6</td></tr>
+        <tr><td>21:05</td><td>&nbsp;</td><td><img src="LG61.png"> <p id="p1">személyvonat</p><br>20:31 Budapest-Keleti --<br>Jánosháza 21:05</td><td>3</td></tr>
+        <tr><td>21:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>20:40 Maglód FP --<br>Jánosháza 21:05</td><td>11</td></tr>
+        <tr><td>21:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>20:35 Maglód Auchan --<br>Jánosháza 21:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>21:10</td><td><img src=""><p id="p2">4321 PETŐFI InterCity</p><br>21:10 Jánosháza --<br>Klenovatelep 21:56</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>21:10</td><td><img src=""><p id="p2">4322 PETŐFI InterCity</p><br>21:10 Jánosháza --<br>Kelenföld 21:42</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>21:12</td><td><img src=""><p id="p2">4215 KŐBÁNYA InterCity</p><br>21:12 Jánosháza --<br>Kőbánya-Kispest 22:02</td><td>9</td></tr>
+        <tr><td>21:14</td><td>21:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>20:48 Budapest-Keleti --<br>Maglód Kelet 21:40</td><td>2</td></tr>
+        <tr><td>21:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4353 PETŐFI InterCity</p><br>20:43 Kelenföld --<br>Jánosháza 21:15</td><td>8</td></tr>
+        <tr><td>21:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>21:00 Falusi Temető --<br>Jánosháza 21:15</td><td>13</td></tr>
+        <tr><td>21:19</td><td>21:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>20:54 Maglód Kelet --<br>Budapest-Keleti 21:47</td><td>1</td></tr>
+       <!-- *<tr><td>21:19</td><td>21:22</td><td><img src=""> <p id="p1">EX 17872 Balaton Expressz</p><br>19:16 Fonyód --<br>Maglód FP 21:45</td><td>8</td></tr> -->
+        <tr><td>21:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>20:50 Martinovics Tér --<br>Jánosháza 21:20</td><td>12</td></tr>
+        <tr><td>21:24</td><td>21:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>21:22 Ligetszentistván --<br>Maglód Ófalu 21:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>21:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>21:25 Jánosháza --<br>Falusi Temető 21:40</td><td>13</td></tr>
+        <tr><td>21:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4354 PETŐFI InterCity</p><br>20:39 Klenovatelep --<br>Jánosháza 21:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>21:27</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>21:27 Jánosháza --<br>Maglód Auchan 21:59</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>21:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>21:30 Jánosháza --<br>Maglód FP 21:55</td><td>11</td></tr>
+        <tr><td>21:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>21:10 Maglód FP --<br>Jánosháza 21:35</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>21:35</td><td><img src=""><p id="p2">480 NEMESVÁR InterCity</p><br>21:35 Jánosháza --<br>Nyíregyháza 1:43</td><td>5</td></tr>
+        <tr><td>&nbsp;</td><td>21:35</td><td><img src=""><p id="p2">481 NEMESVÁR InterCity</p><br>21:35 Jánosháza --<br>Szombathely 1:10</td><td>6</td></tr>
+        <tr><td>21:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>21:05 Maglód Auchan --<br>Jánosháza 21:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>21:40</td><td><img src=""><p id="p2">482 NEMESVÁR InterCity</p><br>21:40 Jánosháza --<br>Szeged 0:23</td><td>4</td></tr>
+        <tr><td>&nbsp;</td><td>21:45</td><td><img src=""><p id="p2">483 NEMESVÁR InterCity</p><br>21:45 Jánosháza --<br>Kaposvár 0:38</td><td>3</td></tr>
+        <tr><td>21:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>21:30 Falusi Temető --<br>Jánosháza 21:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>21:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>21:49 Jánosháza --<br>Martinovics Tér 22:19</td><td>12</td></tr>
+        <tr><td>21:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4651 KÁLMÁN InterCity</p><br>20:35 Szolnok --<br>Jánosháza 21:50</td><td>7</td></tr>
+        <tr><td>21:50</td><td>&nbsp;</td><td><img src=""><p id="p2">4652 KÁLMÁN InterCity</p><br>20:33 Székesfehérvár --<br>Jánosháza 21:50</td><td>7</td></tr>
+        <tr><td>21:51</td><td>&nbsp;</td><td><img src=""><p id="p2">4236 KŐBÁNYA InterCity</p><br>21:10 Kőbánya-Kispest --<br>Jánosháza 21:51</td><td>9</td></tr>
+        <tr><td>21:54</td><td>21:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>21:49 Maglód Ófalu --<br>Ligetszentisván 21:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>21:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>21:55 Jánosháza --<br>Falusi Temető 22:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>21:57</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>21:57 Jánosháza --<br>Maglód Auchan 22:29</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>22:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>22:00 Jánosháza --<br>Maglód FP 22:25</td><td>11</td></tr>
+        <tr><td>22:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>21:40 Maglód FP --<br>Jánosháza 22:05</td><td>11</td></tr>
+        <tr><td>22:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>21:35 Maglód Auchan --<br>Jánosháza 22:07</td><td>10</td></tr>
+        <tr><td>22:14</td><td>22:15</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>21:48 Budapest-Keleti --<br>Maglód Kelet 22:40</td><td>2</td></tr>
+        <tr><td>22:15</td><td>&nbsp;</td><td><img src=""><p id="p2">4355 PETŐFI InterCity</p><br>21:43 Kelenföld --<br>Jánosháza 22:15</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>22:15</td><td><img src=""><p id="p2">484 NEMESVÁR InterCity</p><br>22:15 Jánosháza --<br>Szeged 0:58</td><td>5</td></tr>
+        <tr><td>22:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>22:00 Falusi Temető --<br>Jánosháza 22:15</td><td>13</td></tr>
+        <tr><td>22:19</td><td>22:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>21:54 Maglód Kelet --<br>Budapest-Keleti 22:47</td><td>1</td></tr>
+        <tr><td>22:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>21:50 Martinovics Tér --<br>Jánosháza 22:20</td><td>12</td></tr>
+        <tr><td>22:24</td><td>22:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>22:22 Ligetszentistván --<br>Maglód Ófalu 22:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>22:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>22:25 Jánosháza --<br>Falusi Temető 22:40</td><td>13</td></tr>
+        <tr><td>22:25</td><td>&nbsp;</td><td><img src=""><p id="p2">4356 PETŐFI InterCity</p><br>21:39 Klenovatelep --<br>Jánosháza 22:25</td><td>8</td></tr>
+        <tr><td>&nbsp;</td><td>22:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>22:30 Jánosháza --<br>Maglód FP 22:55</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>22:30</td><td><img src=""><p id="p2">485 NEMESVÁR InterCity</p><br>22:30 Jánosháza --<br>Kaposvár 1:23</td><td>4</td></tr>
+        <tr><td>22:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>22:10 Maglód FP --<br>Jánosháza 22:35</td><td>11</td></tr>
+        <tr><td>22:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>22:05 Maglód Auchan --<br>Jánosháza 22:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>22:40</td><td><img src=""><p id="p2">492 DUNA InterCity</p><br>22:40 Jánosháza --<br>Záhony 3:45</td><td>5</td></tr>
+        <tr><td>22:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>22:30 Falusi Temető --<br>Jánosháza 22:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>22:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>22:49 Jánosháza --<br>Martinovics Tér 23:19</td><td>12</td></tr>
+        <tr><td>&nbsp;</td><td>22:50</td><td><img src=""><p id="p2">493 DUNA InterCity</p><br>22:50 Jánosháza --<br>Hegyeshalom 1:06</td><td>6</td></tr>
+        <tr><td>22:54</td><td>22:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>22:49 Maglód Ófalu --<br>Ligetszentisván 22:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>22:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>22:55 Jánosháza --<br>Falusi Temető 23:10</td><td>13</td></tr>
+        <tr><td>22:56</td><td>&nbsp;</td><td><img src=""><p id="p2">4237 KŐBÁNYA InterCity</p><br>22:15 Kőbánya-Kispest --<br>Jánosháza 22:56</td><td>9</td></tr>
+        <tr><td>&nbsp;</td><td>23:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>23:00 Jánosháza --<br>Maglód FP 23:25</td><td>11</td></tr>
+        <tr><td>23:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4721 FENYŐ InterCity</p><br>20:19 Lőkösháza --<br>Jánosháza 23:00</td><td>6</td></tr>
+        <tr><td>23:00</td><td>&nbsp;</td><td><img src=""><p id="p2">4722 FENYŐ InterCity</p><br>20:51 Veszprém --<br>Jánosháza 23:00</td><td>6</td></tr>
+        <tr><td>23:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>22:40 Maglód FP --<br>Jánosháza 23:05</td><td>11</td></tr>
+        <tr><td>23:07</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>22:35 Maglód Auchan --<br>Jánosháza 23:07</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>23:10</td><td><img src=""><p id="p2">494 DUNA InterCity</p><br>23:10 Jánosháza --<br>Sátoraljaújhely 2:27</td><td>5</td></tr>
+        <tr><td>23:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>23:00 Falusi Temető --<br>Jánosháza 23:15</td><td>13</td></tr>
+        <tr><td>23:19</td><td>23:20</td><td><img src="Lz61.png"> <p id="p1">személyvonat</p><br>22:54 Maglód Kelet --<br>Budapest-Keleti 23:47</td><td>1</td></tr>
+        <tr><td>23:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>22:50 Martinovics Tér --<br>Jánosháza 23:20</td><td>12</td></tr>
+        <tr><td>23:24</td><td>23:25</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>23:22 Ligetszentistván --<br>Maglód Ófalu 23:30</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>23:25</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>23:25 Jánosháza --<br>Falusi Temető 23:40</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>23:30</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>23:30 Jánosháza --<br>Maglód FP 23:55</td><td>11</td></tr>
+        <tr><td>&nbsp;</td><td>23:30</td><td><img src=""><p id="p2">400 HOLDFÉNY EuroNight</p><br>23:30 Jánosháza --<br>Wien HBF 2:38</td><td>3</td></tr>
+        <tr><td>23:35</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>23:10 Maglód FP --<br>Jánosháza 23:35</td><td>11</td></tr>
+        <tr><td>23:37</td><td>&nbsp;</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>23:05 Maglód Auchan --<br>Jánosháza 23:37</td><td>10</td></tr>
+        <tr><td>&nbsp;</td><td>23:35</td><td><img src=""><p id="p2">495 DUNA InterCity</p><br>23:35 Jánosháza --<br>Nagykanizsa 1:51</td><td>5</td></tr>
+        <tr><td>&nbsp;</td><td>23:40</td><td><img src=""><p id="p2">401 HOLDFÉNY EuroNight</p><br>23:40 Jánosháza --<br>Bucuresti-Nord 15:19</td><td>4</td></tr>
+        <tr><td>23:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>23:30 Falusi Temető --<br>Jánosháza 23:45</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>23:49</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>23:49 Jánosháza --<br>Martinovics Tér 0:19</td><td>12</td></tr>
+        <tr><td>&nbsp;</td><td>23:50</td><td><img src=""><p id="p2">402 HOLDFÉNY EuroNight</p><br>23:50 Jánosháza --<br>Zagreb 7:18</td><td>6</td></tr>
+        <tr><td>23:54</td><td>23:55</td><td><img src="LS62.png"> <p id="p1">személyvonat</p><br>23:49 Maglód Ófalu --<br>Ligetszentisván 23:57</td><td>1a</td></tr>
+        <tr><td>&nbsp;</td><td>23:55</td><td><img src="LS63.png"> <p id="p1">3610 személyvonat</p><br>23:55 Jánosháza --<br>Falusi Temető 0:10</td><td>13</td></tr>
+        <tr><td>&nbsp;</td><td>0:00</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>0:00 Jánosháza --<br>Maglód FP 0:25</td><td>11</td></tr>
+        <tr><td>0:05</td><td>&nbsp;</td><td><img src="LS61.png"> <p id="p1">személyvonat</p><br>23:40 Maglód FP --<br>Jánosháza 0:05</td><td>11</td></tr>
+        <tr><td>0:15</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>0:00 Falusi Temető --<br>Jánosháza 0:15</td><td>13</td></tr>
+        <tr><td>0:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>23:50 Martinovics Tér --<br>Jánosháza 0:20</td><td>12</td></tr>
+        <tr><td>0:45</td><td>&nbsp;</td><td><img src="LS63.png"> <p id="p1">személyvonat</p><br>0:30 Falusi Temető --<br>Jánosháza 0:45</td><td>13</td></tr>
+        <tr><td>1:16</td><td>&nbsp;</td><td><img src=""><p id="p2">413 HOLDFÉNY EuroCity</p><br>13:58 Berlin HBF --<br>Jánosháza 1:16</td><td>5</td></tr>
+        <tr><td>1:20</td><td>&nbsp;</td><td><img src="LS64.png"> <p id="p1">személyvonat</p><br>0:50 Martinovics Tér --<br>Jánosháza 1:20</td><td>12</td></tr>
+        <tr><td>&nbsp;</td><td>1:30</td><td><img src=""><p id="p2">403 HOLDFÉNY EuroNight</p><br>1:30 Jánosháza --<br>Arad 6:36</td><td>3</td></tr>
+        <tr><td>&nbsp;</td><td>1:45</td><td><img src=""><p id="p2">404 HOLDFÉNY EuroNight</p><br>1:45 Jánosháza --<br>Berlin HBF 12:58</td><td>4</td></tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</body>
+</html>

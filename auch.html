@@ -1,0 +1,221 @@
+<meta charset=utf-8>
+<head>
+<style>
+body{
+margin:0;
+background:#ffffff;
+}
+.nav{
+width:100%;
+background:#000080;
+height:80px;
+}
+ul{
+margin:0;
+padding:0;
+list-style:none;
+position:absolute;
+}
+ul li {
+float:left;
+margin-top:20px;
+}
+ul li a{
+width:150px;
+color:white;
+display:block;
+text-decoration:none;
+font-size:20px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:Century Gothic;
+font-weight:bold;
+}
+a:hover{
+background:#0000b3;
+}
+ul li ul {
+background:#000033;
+}
+h1{
+  margin: 20 33% 20 33%;
+  font-size: 40px;
+}
+
+table {
+
+border: none;
+border-spacing: 0;
+background: rgb(123, 201, 224);
+font-size: 30px;
+width: 883px;
+
+}
+tbody{
+            height: 500px;
+            overflow: scroll;
+        }
+        #table-wrapper {
+  position:relative;
+  border: 2px solid #000;
+  height: 763px;
+  width: 900px;
+  margin-left: 35%;
+}
+#table-scroll {
+  height:763px;
+  overflow:auto;  
+  width: 900px;
+}
+
+#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}
+table td {
+font-weight: normal;
+color: rgb(99, 99, 99);
+text-align: center;
+vertical-align: left;
+padding: 5px 40px 5px 40px;
+font-family: sans-serif;
+}
+tr:nth-child(1){
+            background: rgb(65, 129, 193);
+        }
+        tr:nth-child(even) {
+            background: rgb(210, 228, 240)
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(229, 236, 242);
+        }
+.button{
+background: #000080;
+color: #f2f2f2;
+height: 75px;
+width: 170px;
+padding: 3px;
+margin:3px;
+}
+h1{
+    display: inline;
+}
+#p1{
+    color: black;
+    display: inline;
+    
+}
+#p2{
+    color: blue;
+    display: inline;
+}
+img{
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+</div>
+<div class="nav">
+<ul>
+<li><img src="logo.png" height="60"></img></li>
+<li><a href ="Főoldal.html"> Főoldal</a></li>
+<li><a href ="Hírek.html"> Hírek</a></li>
+<li><a href ="Főpályaudvar.html"> Főpályaudvar</a></li>
+<li><a href ="Térkép.html"> Térkép</a></li>
+<li><a href ="Vonatinformáció.html"> Menetrendek</a></li>
+<li><a href ="jh_elerhetoseg.html"> Elérhetőségek</a></li>
+<li><a href ="Vonataink.html"> Vonataink</a></li>
+</ul>
+</div>
+<a href="Vonatinformáció.html"><Button class="button">Vissza</button></a>
+
+<h1>Maglód Auchan állomás menetrendje</h1>
+
+<div id="table-wrapper">
+    <div id="table-scroll">
+<table class="table-sticky" align="center">
+    <thead>
+<tr><th>Érkezés</th><th>Indulás</th><th>Úticél</th><th>Vágány</th></tr>
+</thead>
+<tbody>
+<tr><td>&nbsp;</td><td>5:05</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>5:05 Maglód Auchan --<br>Jánosháza 5:37</td><td>1</td></tr>
+<tr><td>5:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>5:27 Jánosháza --<br>Maglód Auchan 5:59</td><td>1</td></tr>
+<tr><td>6:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>5:57 Jánosháza --<br>Maglód Auchan 6:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>6:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>6:35 Maglód Auchan --<br>Jánosháza 7:07</td><td>1</td></tr>
+<tr><td>6:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>6:27 Jánosháza --<br>Maglód Auchan 6:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>7:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>7:05 Maglód Auchan --<br>Jánosháza 7:37</td><td>2</td></tr>
+<tr><td>7:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>6:57 Jánosháza --<br>Maglód Auchan 7:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>7:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>7:35 Maglód Auchan --<br>Jánosháza 8:07</td><td>1</td></tr>
+<tr><td>7:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>7:27 Jánosháza --<br>Maglód Auchan 7:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>8:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>8:05 Maglód Auchan --<br>Jánosháza 8:37</td><td>2</td></tr>
+<tr><td>8:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>7:57 Jánosháza --<br>Maglód Auchan 8:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>8:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>8:35 Maglód Auchan --<br>Jánosháza 9:07</td><td>1</td></tr>
+<tr><td>8:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>8:27 Jánosháza --<br>Maglód Auchan 8:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>9:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>9:05 Maglód Auchan --<br>Jánosháza 9:37</td><td>2</td></tr>
+<tr><td>9:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>8:57 Jánosháza --<br>Maglód Auchan 9:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>9:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>9:35 Maglód Auchan --<br>Jánosháza 10:07</td><td>1</td></tr>
+<tr><td>9:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>9:27 Jánosháza --<br>Maglód Auchan 9:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>10:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>10:05 Maglód Auchan --<br>Jánosháza 10:37</td><td>2</td></tr>
+<tr><td>10:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>9:57 Jánosháza --<br>Maglód Auchan 10:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>10:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>10:35 Maglód Auchan --<br>Jánosháza 11:07</td><td>1</td></tr>
+<tr><td>10:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>10:27 Jánosháza --<br>Maglód Auchan 10:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>11:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>11:05 Maglód Auchan --<br>Jánosháza 11:37</td><td>2</td></tr>
+<tr><td>11:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>10:57 Jánosháza --<br>Maglód Auchan 11:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>11:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>11:35 Maglód Auchan --<br>Jánosháza 12:07</td><td>1</td></tr>
+<tr><td>11:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>11:27 Jánosháza --<br>Maglód Auchan 11:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>12:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>12:05 Maglód Auchan --<br>Jánosháza 12:37</td><td>2</td></tr>
+<tr><td>12:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>11:57 Jánosháza --<br>Maglód Auchan 12:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>12:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>12:35 Maglód Auchan --<br>Jánosháza 13:07</td><td>1</td></tr>
+<tr><td>12:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>12:27 Jánosháza --<br>Maglód Auchan 12:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>13:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>13:05 Maglód Auchan --<br>Jánosháza 13:37</td><td>2</td></tr>
+<tr><td>13:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>12:57 Jánosháza --<br>Maglód Auchan 13:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>13:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>13:35 Maglód Auchan --<br>Jánosháza 14:07</td><td>1</td></tr>
+<tr><td>13:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>13:27 Jánosháza --<br>Maglód Auchan 13:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>14:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>14:05 Maglód Auchan --<br>Jánosháza 14:37</td><td>2</td></tr>
+<tr><td>14:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>13:57 Jánosháza --<br>Maglód Auchan 14:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>14:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>14:35 Maglód Auchan --<br>Jánosháza 15:07</td><td>1</td></tr>
+<tr><td>14:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>14:27 Jánosháza --<br>Maglód Auchan 14:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>15:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>15:05 Maglód Auchan --<br>Jánosháza 15:37</td><td>2</td></tr>
+<tr><td>15:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>14:57 Jánosháza --<br>Maglód Auchan 15:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>15:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>15:35 Maglód Auchan --<br>Jánosháza 16:07</td><td>1</td></tr>
+<tr><td>15:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>15:27 Jánosháza --<br>Maglód Auchan 15:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>16:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>16:05 Maglód Auchan --<br>Jánosháza 16:37</td><td>2</td></tr>
+<tr><td>16:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>15:57 Jánosháza --<br>Maglód Auchan 16:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>16:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>16:35 Maglód Auchan --<br>Jánosháza 17:07</td><td>1</td></tr>
+<tr><td>16:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>16:27 Jánosháza --<br>Maglód Auchan 16:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>17:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>17:05 Maglód Auchan --<br>Jánosháza 17:37</td><td>2</td></tr>
+<tr><td>17:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>16:57 Jánosháza --<br>Maglód Auchan 17:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>17:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>17:35 Maglód Auchan --<br>Jánosháza 18:07</td><td>1</td></tr>
+<tr><td>17:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>17:27 Jánosháza --<br>Maglód Auchan 17:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>18:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>18:05 Maglód Auchan --<br>Jánosháza 18:37</td><td>2</td></tr>
+<tr><td>18:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>17:57 Jánosháza --<br>Maglód Auchan 18:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>18:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>18:35 Maglód Auchan --<br>Jánosháza 19:07</td><td>1</td></tr>
+<tr><td>18:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>18:27 Jánosháza --<br>Maglód Auchan 18:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>19:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>19:05 Maglód Auchan --<br>Jánosháza 19:37</td><td>2</td></tr>
+<tr><td>19:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>18:57 Jánosháza --<br>Maglód Auchan 19:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>19:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>20:35 Maglód Auchan --<br>Jánosháza 20:07</td><td>1</td></tr>
+<tr><td>19:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>19:27 Jánosháza --<br>Maglód Auchan 19:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>20:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>20:05 Maglód Auchan --<br>Jánosháza 20:37</td><td>2</td></tr>
+<tr><td>20:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>19:57 Jánosháza --<br>Maglód Auchan 20:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>20:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>19:35 Maglód Auchan --<br>Jánosháza 20:07</td><td>1</td></tr>
+<tr><td>20:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>20:27 Jánosháza --<br>Maglód Auchan 20:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>21:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>21:05 Maglód Auchan --<br>Jánosháza 21:37</td><td>2</td></tr>
+<tr><td>21:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>20:57 Jánosháza --<br>Maglód Auchan 21:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>21:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>20:35 Maglód Auchan --<br>Jánosháza 21:07</td><td>1</td></tr>
+<tr><td>21:59</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>21:27 Jánosháza --<br>Maglód Auchan 21:59</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>22:05</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>22:05 Maglód Auchan --<br>Jánosháza 22:37</td><td>2</td></tr>
+<tr><td>22:29</td><td>&nbsp;</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>21:57 Jánosháza --<br>Maglód Auchan 22:29</td><td>2</td></tr>
+<tr><td>&nbsp;</td><td>22:35</td><td><img src="LS65.png"><p id="p1">személyvonat</p><br>21:35 Maglód Auchan --<br>Jánosháza 22:07</td><td>1</td></tr>
+<tr><td>&nbsp;</td><td>23:05</td><td><img src="LS65.png"> <p id="p1">személyvonat</p><br>23:05 Maglód Auchan --<br>Jánosháza 23:37</td><td>2</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
