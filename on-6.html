@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="indulo"></div>
+    <div id="erkezo"></div>
+    <div id="travelDate"></div>
+    <div id="travelTime"></div>
+    <div id="utType"></div>
+    <a id="nextPageLink" href="on-7.html">Next Page</a>
+    <a href="on-5.html"><button>Vissza</button></a>
+    <script>
+        // Az URL paraméterek kiolvasása
+
+const indulo = localStorage.getItem("indulo");
+const erkezo = localStorage.getItem("erkezo");
+const travelDate = localStorage.getItem("travelDate");
+const travelTime = localStorage.getItem("travelTime");
+const utType = localStorage.getItem("utType");
+// Kiíratás a konzolon ellenőrzés céljából
+console.log(indulo);
+console.log(erkezo);
+console.log(travelDate);
+console.log(utType);
+// Innentől további műveleteket végezhetsz a változóval
+document.getElementById("indulo").textContent = indulo;
+document.getElementById("erkezo").textContent = erkezo;
+document.getElementById("travelDate").textContent = travelDate;
+document.getElementById("travelTime").textContent = travelTime;
+document.getElementById("utType").textContent = utType;
+    </script>
+</body>
+</html>

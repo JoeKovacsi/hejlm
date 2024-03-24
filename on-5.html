@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utazás összesítése</title>
+</head>
+
+<body>
+  <button id="oda">Csak odaút</button>
+<button id="oda-vissza">Oda-vissza út</button>
+
+
+<!-- Tovább gomb a második oldalra való átvitelhez -->
+<a id="nextPageLink" href="on-6.html">Next Page</a>
+
+  <a href="on-4.html"><button>Vissza</button></a>
+  <script>
+let utType;
+
+document.getElementById("oda").addEventListener("click", function() {
+  localStorage.setItem('utType', this.textContent);
+});
+
+document.getElementById("oda-vissza").addEventListener("click", function() {
+  localStorage.setItem('utType', this.textContent);
+});
+
+
+  </script>
+</body>
+
+</html>

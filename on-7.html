@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online jegyvásárlás</title>
+</head>
+<body>
+    <button class="kedvezmeny">Budapest Bérlet</button>
+    <button class="kedvezmeny">Diákigazolvány (14-25, nappali, esti)</button>
+    <button class="kedvezmeny">Közalkalmazottak utazási kedvezménye</button>
+    <button class="kedvezmeny">Ellátottak utazási utalványa</button>
+    <a id="nextPageLink" href="on-8.html">Next Page</a>
+    <a href="on-6.html"><button>Vissza</button></a>
+    <script>
+        document.querySelectorAll('.kedvezmeny').forEach(button => {
+  button.addEventListener('click', function() {
+    localStorage.setItem('kedvezmeny', this.textContent);
+  });
+});
+    </script>
+</body>
+</html>

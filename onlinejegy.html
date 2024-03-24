@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onlinejegy.css">
+    <title>Online jegyvásárlás</title>
+    
+</head>
+<body>
+<div>
+    <form id="utvonalForm">
+        <label for="indulasiHely">Indulási hely:</label>
+        <input type="text" id="indulasiHely" name="indulasiHely" oninput="kereses()" minlength="2" required><br>
+        <div id="talalatok"></div><br>
+      
+        <label for="utiCel">Úti cél:</label>
+        <input type="text" id="utiCel" name="utiCel" oninput="kereses()" minlength="2" required><br>
+        <div id="talalatok"></div><br>
+      
+        <label for="odaVissza">Oda-vissza út:</label>
+        <input type="checkbox" id="odaVissza" name="odaVissza"><br><br>
+      
+        <label for="indulasIdopont">Indulás időpontja:</label>
+        <input type="datetime-local" id="indulasIdopont" name="indulasIdopont" required><br><br>
+      
+        <label for="utasTipus">Utastípus:</label>
+        <select id="utasTipus" name="utasTipus">
+          <option value="felnott">Felnőtt</option>
+          <option value="diak">Diák</option>
+          <option value="nyugdijas">Nyugdíjas</option>
+        </select><br><br>
+      
+        <button type="button" id="kedvezmenyValasztas">Kedvezmény kiválasztása</button><br><br>
+      
+        <button type="submit" id="keresesGomb">Keresés</button>
+      </form>
+      <input type="text" id="searchInput" placeholder="Search buttons...">
+<br><br>
+
+<button name="bud">Budapest</button>
+<button name="pecs">Pécs</button>
+<button name="janh">Jánosháza</button>
+<button name="ligs">Ligetszentistván</button>
+
+<input type="text" id="searchInput" placeholder="Search...">
+<div class="search-results" id="searchResults"></div>
+<button id="continueButton" style="display:none;">Continue</button>
+
+</div>
+<script src="onlinejegy.js"></script>
+</body>
+</html>

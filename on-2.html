@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Railway Stations</title>
+<style>
+  .station-button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .selected {
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+
+<div id="destinationStations">
+  <h2>Úti célállomások</h2>
+  <button class="erkezo">Maglód Teher</button>
+<button class="erkezo">Maglód Föpályaudvar</button>
+<button class="erkezo">Maglód Kelet</button>
+</div>
+
+<a id="nextPageLink" href="on-3.html">Next Page</a>
+<a href="on-1.html"><button>Vissza</button></a>
+<script>
+let erkezo;
+
+document.querySelectorAll('.erkezo').forEach(button => {
+  button.addEventListener('click', function() {
+    localStorage.setItem('erkezo', this.textContent);
+  });
+});
+
+document.getElementById("nextPageLink").addEventListener("click", function() {
+    // Az érték átvitele az URL-ben a második oldalra
+    this.href += "?erkezo=" + encodeURIComponent(erkezo);
+});
+</script>
+
+</body>
+</html>

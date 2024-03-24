@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online jegyvásárlás</title>
+</head>
+<body>
+    <div>
+        <h2>A választott kedvezmény:</h2>
+        <span>
+            <span id="value">1</span>
+        <button id="increaseButton">+</button>
+        <button id="decreaseButton" style="display: none;">-</button>
+        <span id="kedvezmeny"></span>
+        </span>
+    </div>
+    <a id="nextPageLink" href="on-9.html">Tovább</a>
+    <a href="on-7.html"><button>Vissza</button></a>
+    <script>
+        
+        const kedvezmeny = localStorage.getItem("kedvezmeny");
+        console.log(kedvezmeny);
+        document.getElementById("kedvezmeny").textContent = kedvezmeny;
+
+         // Alapérték
+         let value = 1;
+
+// Az érték megjelenítése
+document.getElementById("value").textContent = value;
+
+// Növelés gomb eseménykezelője
+document.getElementById("increaseButton").addEventListener("click", function() {
+    value++;
+    document.getElementById("value").textContent = value;
+
+    // Ha az érték 2 vagy nagyobb, megjelenítjük a csökkentés gombot
+    if (value >= 2) {
+        document.getElementById("decreaseButton").style.display = "inline-block";
+    }
+});
+
+// Csökkentés gomb eseménykezelője
+document.getElementById("decreaseButton").addEventListener("click", function() {
+    value--;
+    document.getElementById("value").textContent = value;
+
+    // Ha az érték 1, elrejtjük a csökkentés gombot
+    if (value === 1) {
+        document.getElementById("decreaseButton").style.display = "none";
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online jegyvásárlás</title>
+</head>
+<body>
+    <div id="indulo"></div>
+    <div id="erkezo"></div>
+    <div id="travelDate"></div>
+    <div id="utType"></div>
+    <div id="kedvezmeny"></div>
+    <div><h3>Vonat kiválasztása</h3>
+    
+    </div>
+    <a id="nextPageLink" href="on-10.html">Next Page</a>
+    <a href="on-8.html"><button>Vissza</button></a>
+    <script>
+const indulo = localStorage.getItem("indulo");
+const erkezo = localStorage.getItem("erkezo");
+const travelDate = localStorage.getItem("travelDate");
+const travelTime = localStorage.getItem("travelTime");
+const utType = localStorage.getItem("utType");
+const kedvezmeny = localStorage.getItem("kedvezmeny");
+
+document.getElementById("indulo").textContent = indulo;
+document.getElementById("erkezo").textContent = erkezo;
+document.getElementById("travelDate").textContent = travelDate;
+document.getElementById("travelTime").textContent = travelTime;
+document.getElementById("utType").textContent = utType;
+document.getElementById("kedvezmeny").textContent = kedvezmeny;
+    </script>
+</body>
+</html>

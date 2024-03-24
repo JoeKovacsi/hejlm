@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Route Summary</title>
+</head>
+<body>
+
+<h1>Útvonal összesítés</h1>
+
+<div id="indulo"></div>
+<div id="erkezo"></div>
+<a id="nextPageLink" href="on-4.html">Next Page</a>
+<a href="on-2.html"><button>Vissza</button></a>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const indulo = localStorage.getItem("indulo");
+const erkezo = localStorage.getItem("erkezo");
+// Kiíratás a konzolon ellenőrzés céljából
+console.log(indulo);
+console.log(erkezo);
+// Innentől további műveleteket végezhetsz a változóval
+document.getElementById("indulo").textContent = indulo;
+document.getElementById("erkezo").textContent = erkezo;
+</script>
+
+</body>
+</html>
